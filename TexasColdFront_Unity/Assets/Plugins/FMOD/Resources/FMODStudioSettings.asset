@@ -517,10 +517,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 1
-  HasPlatforms: 1
+  HasSourceProject: 0
+  HasPlatforms: 0
   sourceProjectPath: ../TexasColdFront_FMOD/TexasColdFront_FMOD.fspro
-  sourceBankPath: ..\TexasColdFront_FMOD\Build
+  sourceBankPath: ../TexasColdFront_FMOD/Build/Desktop
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

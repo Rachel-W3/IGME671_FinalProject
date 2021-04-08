@@ -13,6 +13,10 @@ namespace tcf.controller
         private bool rightUp = true;
         private bool faceRight = true;
 
+        public bool LeftUp { get => leftUp; }
+        public bool RightUp { get => rightUp; }
+        public float MovingSpeed { get => moveSpeed; }
+
         private void Start()
         {
             anim = GetComponent<Animator>();

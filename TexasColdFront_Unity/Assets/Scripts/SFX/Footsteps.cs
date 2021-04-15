@@ -44,7 +44,7 @@ namespace tcf.controller
         {
             if (isPlayerMoving)
             {
-                footstep = FMODUnity.RuntimeManager.CreateInstance("event:/Indoors/Footsteps");
+                footstep = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Footsteps");
                 footstep.start();
             }
         }

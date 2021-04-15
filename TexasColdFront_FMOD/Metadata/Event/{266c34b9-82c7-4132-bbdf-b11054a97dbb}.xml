@@ -102,6 +102,9 @@
 		<property name="maximumTimeDelay">
 			<value>20</value>
 		</property>
+		<property name="volume">
+			<value>-10.5</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{ff31608c-c3d2-4430-8e55-210c5d4e395b}</destination>
 			<destination>{506b8f2e-0025-4c86-a1e4-e7dfc613af3b}</destination>

@@ -1960,7 +1960,7 @@ PrefabInstance:
     - target: {fileID: 4411749067611177084, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000043631448
+      value: 0.00007632849
       objectReference: {fileID: 0}
     - target: {fileID: 4411749067611177084, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
@@ -1970,7 +1970,7 @@ PrefabInstance:
     - target: {fileID: 4826710507932243860, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00007635355
+      value: -0.00008401275
       objectReference: {fileID: 0}
     - target: {fileID: 4826710507932243860, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Outdoors/Howling-winds
+  Event: event:/Ambience/Howling-winds
   PlayEvent: 1
   StopEvent: 12
   AllowFadeout: 1

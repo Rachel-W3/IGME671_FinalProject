@@ -14,6 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Indoors/Footsteps
   guid: b9346c26c7823241bbdfb11054a97dbb
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 200
+--- !u!114 &-3634792393137565398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footsteps
+  guid: b9346c26c7823241bbdfb11054a97dbb
   Banks:
   - {fileID: 1457785374085908321}
   IsStream: 0
@@ -104,14 +126,15 @@ MonoBehaviour:
   - {fileID: 1806101674161576380}
   - {fileID: 1457785374085908321}
   EditorEvents:
-  - {fileID: 1058347956896807066}
-  - {fileID: -4506234221962370801}
+  - {fileID: 7939975554261152336}
+  - {fileID: 1637731443506699796}
+  - {fileID: -3634792393137565398}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1457785374085908321}
   StringsBanks:
   - {fileID: 1806101674161576380}
-  stringsBankWriteTime: 637534467033318824
+  stringsBankWriteTime: 637540543270468322
   cacheVersion: 6
 --- !u!114 &660362697174928175
 MonoBehaviour:
@@ -150,8 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Outdoors/Howling-winds
   guid: 8502f194e9245146ba207354585f1cee
-  Banks:
-  - {fileID: 1457785374085908321}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -174,7 +196,7 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637534467033168802
+  lastModified: 637540543270338352
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -199,6 +221,29 @@ MonoBehaviour:
   - Name: 
     Value: 754
   Exists: 1
+--- !u!114 &1637731443506699796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Howling-winds
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Howling-winds
+  guid: 8502f194e9245146ba207354585f1cee
+  Banks:
+  - {fileID: 1457785374085908321}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 105853
 --- !u!114 &1806101674161576380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,11 +259,11 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637534467033318824
+  lastModified: 637540543270468322
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 772
+    Value: 824
   Exists: 1
 --- !u!114 &2444528987588403857
 MonoBehaviour:
@@ -283,3 +328,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 876
   Exists: 1
+--- !u!114 &7939975554261152336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/FireCrackling
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/FireCrackling
+  guid: 5bd1043ca8fa3644b086a4dc94ab010e
+  Banks:
+  - {fileID: 1457785374085908321}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 49293

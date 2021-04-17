@@ -102,6 +102,7 @@
 		<property name="maximumTimeDelay">
 			<value>20</value>
 		</property>
+		<property name="name" />
 		<property name="volume">
 			<value>-10.5</value>
 		</property>

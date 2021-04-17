@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.23/win64" 1618472556
+<REAPER_PROJECT 0.1 "6.23/win64" 1618472736
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -504,30 +504,5 @@
         FILE "samples\452529__kyles__wind-whistle-kitchen-window-whiny-low1.flac"
       >
     >
-  >
-  <TRACK {58B38CFB-573C-4009-9B29-CC5233C425A3}
-    NAME ""
-    PEAKCOL 16576
-    BEAT -1
-    AUTOMODE 0
-    VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    PLAYOFFS 0 1
-    ISBUS 0 0
-    BUSCOMP 0 0 0 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
-    FREEMODE 0
-    SEL 1
-    REC 0 0 1 0 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {58B38CFB-573C-4009-9B29-CC5233C425A3}
-    PERF 0
-    MIDIOUT -1
-    MAINSEND 1 0
   >
 >

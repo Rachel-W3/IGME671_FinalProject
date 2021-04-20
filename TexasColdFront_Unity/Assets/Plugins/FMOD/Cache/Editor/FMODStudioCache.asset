@@ -45,6 +45,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 200
+--- !u!114 &-3500896168062837523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/FurnitureGathering
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/FurnitureGathering
+  guid: b2670f2ea3d68245b6de757b5a5b01e4
+  Banks:
+  - {fileID: 1457785374085908321}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 340
 --- !u!114 &-3444863400629050814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,12 +200,13 @@ MonoBehaviour:
   - {fileID: -1565343942176159289}
   - {fileID: -3444863400629050814}
   - {fileID: 8821234622957848163}
+  - {fileID: -3500896168062837523}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1457785374085908321}
   StringsBanks:
   - {fileID: 1806101674161576380}
-  stringsBankWriteTime: 637544773358618437
+  stringsBankWriteTime: 637544785115070724
   cacheVersion: 6
 --- !u!114 &660362697174928175
 MonoBehaviour:
@@ -244,7 +268,7 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637544773358498419
+  lastModified: 637544785114940709
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -306,11 +330,11 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637544773358618437
+  lastModified: 637544785115070724
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 928
+    Value: 968
   Exists: 1
 --- !u!114 &2444528987588403857
 MonoBehaviour:

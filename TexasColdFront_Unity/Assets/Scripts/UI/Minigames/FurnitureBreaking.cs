@@ -24,6 +24,7 @@ public class FurnitureBreaking : MonoBehaviour
     /**************/ private bool                      furnitureDestroyed;
     /**************/ private FMOD.Studio.EventInstance furnitureHit_SFX;
     /**************/ private FMOD.Studio.EventInstance furnitureDestroyed_SFX;
+    /**************/ private FMOD.Studio.EventInstance furnitureGathering_SFX;
 
     /// <summary>
     /// add listener to button on start
@@ -64,6 +65,9 @@ public class FurnitureBreaking : MonoBehaviour
                     Button instanceBtn = instance.GetComponent<Button>();
                     btnPieceInstances.Add(instanceBtn);
                     instanceBtn.onClick.AddListener(() => {
+                        // play wood gathering sound effects
+                        furnitureGathering_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureGathering");
+                        furnitureGathering_SFX.start();
                         // increment furniture piece count and destroy the button; once all the furniture is clicked,
                         manager.FurniturePieceCount++;
                         btnPieceInstances.Remove(instanceBtn);

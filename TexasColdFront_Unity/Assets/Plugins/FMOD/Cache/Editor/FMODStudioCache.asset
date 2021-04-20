@@ -182,6 +182,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 105853
+--- !u!114 &-2981335123038577919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/BucketPlacedOnSnow
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/BucketPlacedOnSnow
+  guid: d06dc82c072c1548b21184ad9c445add
+  Banks:
+  - {fileID: 1457785374085908321}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 501
 --- !u!114 &-2403733208272526638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,12 +318,13 @@ MonoBehaviour:
   - {fileID: 8435190548613914832}
   - {fileID: 2741661202975457682}
   - {fileID: -5181509006548787728}
+  - {fileID: -2981335123038577919}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1457785374085908321}
   StringsBanks:
   - {fileID: 1806101674161576380}
-  stringsBankWriteTime: 637544881568364127
+  stringsBankWriteTime: 637544927091487082
   cacheVersion: 6
 --- !u!114 &660362697174928175
 MonoBehaviour:
@@ -362,7 +386,7 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637544881568234101
+  lastModified: 637544927091347031
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -424,11 +448,11 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637544881568364127
+  lastModified: 637544927091487082
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1316
+    Value: 1416
   Exists: 1
 --- !u!114 &2444528987588403857
 MonoBehaviour:
@@ -516,6 +540,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 876
   Exists: 1
+--- !u!114 &7742053142019818486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FireCrackling/fuelLevel
+  m_EditorClassIdentifier: 
+  Name: fuelLevel
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &7939975554261152336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,10 +579,31 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 8023336770985168063}
   MinDistance: 1
   MaxDistance: 20
-  Length: 49293
+  Length: 0
+--- !u!114 &8023336770985168063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FireCrackling/fuelLevel
+  m_EditorClassIdentifier: 
+  Name: fuelLevel
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8371965920849468971
 MonoBehaviour:
   m_ObjectHideFlags: 0

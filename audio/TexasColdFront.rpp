@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.23/win64" 1618903946
+<REAPER_PROJECT 0.1 "6.23/win64" 1618907615
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -15,8 +15,8 @@
   VIDEO_CONFIG 0 0 256
   PANMODE 3
   CURSOR 0
-  ZOOM 2992.9384265551066 0 0
-  VZOOMEX 8 671
+  ZOOM 1073.2558718594626 0 0
+  VZOOMEX 8 1044
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -58,8 +58,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 0.25
-  SELECTION2 0 0.25
+  SELECTION 0 0
+  SELECTION2 0 0
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -685,7 +685,7 @@
     >
   >
   <TRACK {1CC29BF2-6610-477B-A5BB-F9C5557E23B1}
-    NAME FurnitureDestroyed_SFX
+    NAME FurnitureDestroyed_sfx
     PEAKCOL 25517311
     BEAT -1
     AUTOMODE 0
@@ -933,7 +933,7 @@
     >
   >
   <TRACK {90A79173-D8BC-40EA-9D05-0B2E2CA42EC3}
-    NAME FurnitureDestroyed_SFX
+    NAME FurnitureDestroyed_sfx
     PEAKCOL 25517311
     BEAT -1
     AUTOMODE 0
@@ -1090,7 +1090,7 @@
     >
   >
   <TRACK {8ED19335-0E15-4B52-BF3D-1068F54E150F}
-    NAME FurnitureGathering_SFX
+    NAME FurnitureGathering_sfx
     PEAKCOL 23430819
     BEAT -1
     AUTOMODE 0
@@ -1228,7 +1228,7 @@
     >
   >
   <TRACK {F3935724-2FE4-4759-8895-1866157895B7}
-    NAME FurnitureGathering_SFX
+    NAME FurnitureGathering_sfx
     PEAKCOL 23430819
     BEAT -1
     AUTOMODE 0
@@ -1325,7 +1325,7 @@
     >
   >
   <TRACK {F8C0557C-9B01-429B-934D-C60505DB84E0}
-    NAME ThrowingWoodToFire_SFX
+    NAME ThrowingWoodToFire_sfx
     PEAKCOL 33527137
     BEAT -1
     AUTOMODE 0
@@ -1417,7 +1417,7 @@
   >
   <TRACK {26A57FAB-8560-456B-80E1-0F41C70569F2}
     NAME ButtonPressed_sfx
-    PEAKCOL 16576
+    PEAKCOL 28405761
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -1442,7 +1442,7 @@
   >
   <TRACK {201D83E1-3395-47C5-A8FA-2A99A708758E}
     NAME "Unedited source"
-    PEAKCOL 16576
+    PEAKCOL 28405761
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -1599,7 +1599,7 @@
   >
   <TRACK {112A6C1A-E373-4BF2-BFA1-12BC18D255C5}
     NAME ButtonPressed_sfx(ver1)
-    PEAKCOL 16576
+    PEAKCOL 28405761
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -1802,11 +1802,11 @@
   >
   <TRACK {0B9A373B-6FAA-4228-A88D-4F70B74EBD37}
     NAME ButtonPressed_sfx(ver2)
-    PEAKCOL 16576
+    PEAKCOL 28405761
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 2 -1
@@ -1858,7 +1858,7 @@
       FADEIN 1 0.002276 0 1 0 0 0
       FADEOUT 1 0.01 0 1 0 0 0
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {362FCFC0-659C-4139-B45B-917C0493109F}
       IID 81
       NAME 534104__pbimal__mouse-click-double-00.flac
@@ -1869,6 +1869,351 @@
       GUID {7D96FCFA-4C1C-4CFC-9982-7D3746118B20}
       <SOURCE FLAC
         FILE "samples\534104__pbimal__mouse-click-double-00.flac"
+      >
+    >
+  >
+  <TRACK {A9E1EE87-DD26-41E2-96E4-1D6D73C2C1D4}
+    NAME MetalBucketRattle_sfx
+    PEAKCOL 28710496
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A9E1EE87-DD26-41E2-96E4-1D6D73C2C1D4}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {9F6E50F7-A3C3-433D-A7A4-6A44CAFCA31D}
+    NAME "Unedited source"
+    PEAKCOL 28710496
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 125 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9F6E50F7-A3C3-433D-A7A4-6A44CAFCA31D}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 9.76167468114317
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0CF0E98C-F0E9-432F-8ED0-500B8D7D4741}
+      IID 85
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CF2C1159-6C81-4BF7-98F4-274CF4D8D425}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+    <ITEM
+      POSITION 9.76167468114317
+      SNAPOFFS 0
+      LENGTH 0.54550534982859
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DFB7E901-FD8F-4A6E-A753-1C2075A909C5}
+      IID 86
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 9.76167468114317
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3E123B5D-CA1C-4C7E-B617-4F765FE3A096}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+    <ITEM
+      POSITION 10.30718003097176
+      SNAPOFFS 0
+      LENGTH 0.90439044840003
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {EBF7BC36-82CB-46A4-9F42-B53753B526F3}
+      IID 88
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 10.30718003097176
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2EDB1B3C-244D-4543-91B4-C4C22DFCFC2A}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+    <ITEM
+      POSITION 11.21157047937178
+      SNAPOFFS 0
+      LENGTH 0.44501752222859
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F0B9D50B-7214-4F2F-BAF8-E564C5C492DB}
+      IID 90
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 11.21157047937178
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {50822822-EAA2-48D5-9490-0C55E9ECF472}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+    <ITEM
+      POSITION 11.65658800160037
+      SNAPOFFS 0
+      LENGTH 0.24404186702858
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2A941E30-B55D-4BEC-8674-C8EED8A693B5}
+      IID 91
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 11.65658800160037
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6F3953E1-AACA-4EEB-8C24-BE465987B3A1}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+    <ITEM
+      POSITION 11.90062986862895
+      SNAPOFFS 0
+      LENGTH 0.81825802474288
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CA7626AC-2B02-44CD-AEEE-80C9C6E329FC}
+      IID 93
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 11.90062986862895
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5D24F603-4E7D-46D9-A876-5DF93F31A3B1}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+    <ITEM
+      POSITION 12.71888789337183
+      SNAPOFFS 0
+      LENGTH 11.231769703
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F7C21BC4-E183-47E6-9A2F-93D0D17E7130}
+      IID 94
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 12.71888789337183
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {71BFC002-6EB3-41C4-9BAE-5C2A9071A210}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+  >
+  <TRACK {C52CB583-ABE3-456C-BEFC-D30554336520}
+    NAME MetalBucketRattle_sfx
+    PEAKCOL 28710496
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 1 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C52CB583-ABE3-456C-BEFC-D30554336520}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {D47027DB-E7A6-4670-818F-C408C42536EE}
+    NAME "Bucket impact"
+    PEAKCOL 28710496
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 94 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D47027DB-E7A6-4670-818F-C408C42536EE}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.39599131124591
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.002238 0 1 0 0 0
+      FADEOUT 1 0.134171 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6B349B71-B8E6-4663-AACD-5B93E34D1984}
+      IID 93
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 2.347311 -1
+      SOFFS 12.01014495808356
+      PLAYRATE 1 1 -5 -1 0 0.0025
+      CHANMODE 0
+      GUID {0276FC1F-8693-4363-BD7C-6AE511F0A87E}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.57717515426942
+      SNAPOFFS 0
+      LENGTH 0.32768447949697
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.00383 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A29A7F2B-5481-474B-90EC-9FCF405A315C}
+      IID 90
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 3.636777 -1
+      SOFFS 11.32890352210339
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4DE7F6F8-6D84-437E-91A3-76A2343EEEFE}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+  >
+  <TRACK {D862DC74-676A-403B-90FC-78A3C0A6C0D7}
+    NAME "Handle rattling"
+    PEAKCOL 28710496
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 2 -2
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 96 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D862DC74-676A-403B-90FC-78A3C0A6C0D7}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.3616073273632
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.002359 0 1 0 0 0
+      FADEOUT 1 0.094313 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {F351E0C0-C5F2-4DA7-A863-C03AA8AF97A2}
+      IID 86
+      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
+      VOLPAN 1 0 3.169862 -1
+      SOFFS 9.91173382804368
+      PLAYRATE 1 1 -5 -1 0 0.0025
+      CHANMODE 0
+      GUID {C9FF0046-A17E-4F31-9CF3-CD511780E911}
+      <SOURCE WAVE
+        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
       >
     >
   >

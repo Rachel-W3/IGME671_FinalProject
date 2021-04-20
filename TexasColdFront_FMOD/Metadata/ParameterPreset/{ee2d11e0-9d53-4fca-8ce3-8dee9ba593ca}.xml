@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="ParameterPreset" id="{ee2d11e0-9d53-4fca-8ce3-8dee9ba593ca}">
 		<property name="name">
-			<value>isPlayerMoving</value>
+			<value>fuelLevel</value>
 		</property>
 		<relationship name="folder">
 			<destination>{cf05457f-51cf-458e-9c17-0174a20c06dc}</destination>
@@ -12,6 +12,9 @@
 		</relationship>
 	</object>
 	<object class="GameParameter" id="{42792da5-7712-4335-ada3-5b3a8e85defe}">
+		<property name="maximum">
+			<value>5</value>
+		</property>
 		<property name="initialValue">
 			<value>0</value>
 		</property>

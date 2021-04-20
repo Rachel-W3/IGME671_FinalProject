@@ -300,7 +300,6 @@ namespace FMODUnity
                     cachedParam.Name = paramDesc.name;
                     cachedParams.Add(cachedParam);
                 }
-
                 cachedParam.Value = value;
             }
 

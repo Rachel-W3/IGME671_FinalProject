@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{30ea2d25-5d91-4dfd-b77e-eba499196837}">
+		<property name="assetPath">
+			<value>MetalBucketRattle_sfx.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.50126984126984131</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f395d3cc-5727-4d88-914f-80dcb0905851}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1980,7 +1980,7 @@ PrefabInstance:
     - target: {fileID: 4411749067611177084, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000026161919
+      value: -0.000023612558
       objectReference: {fileID: 0}
     - target: {fileID: 4411749067611177084, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
@@ -2423,7 +2423,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7760736, y: 1}
+    m_SensorSize: {x: 1.7788697, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2586,7 +2586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambience/Howling-winds
+  Event: event:/Ambience/HowlingWinds
   PlayEvent: 1
   StopEvent: 12
   AllowFadeout: 1

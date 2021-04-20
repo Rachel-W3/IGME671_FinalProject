@@ -14,14 +14,15 @@ namespace tcf.ui
 /// </remarks>
 public class FurnitureBreaking : MonoBehaviour
 {
-    [SerializeField] private Button                 btnFurnishing;
-    [SerializeField] private GameObject             btnPieceTemplate;
-    [SerializeField] private MinigameUI             manager;
-    /**************/ private int                    btnFurnishingClickCount;
-    /**************/ private List<Button>           btnPieceInstances;
+    [SerializeField] private Button                    btnFurnishing;
+    [SerializeField] private GameObject                btnPieceTemplate;
+    [SerializeField] private MinigameUI                manager;
+    /**************/ private int                       btnFurnishingClickCount;
+    /**************/ private List<Button>              btnPieceInstances;
     // TODO: depend on furniture type for required clicks and number of pieces created
-    /**************/ private const int              btnPieceReqClicks = 5;
-    /**************/ private bool                   furnitureDestroyed;
+    /**************/ private const int                 btnPieceReqClicks = 5;
+    /**************/ private bool                      furnitureDestroyed;
+    /**************/ private FMOD.Studio.EventInstance furnitureHit_SFX;
 
     /// <summary>
     /// add listener to button on start
@@ -32,6 +33,8 @@ public class FurnitureBreaking : MonoBehaviour
         btnFurnishing.onClick.AddListener(() => {
             // increment the button click count; if the right number is hit, spawn pieces
             btnFurnishingClickCount++;
+            furnitureHit_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureHit");
+            furnitureHit_SFX.start();
             if (btnFurnishingClickCount >= btnPieceReqClicks)
             {
                 // make the button noninteractable and loop to spawn pieces

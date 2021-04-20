@@ -45,6 +45,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 200
+--- !u!114 &-3444863400629050814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/FurnitureHit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/FurnitureHit
+  guid: a335e7d53fb77e4da2eca1c5d56a3177
+  Banks:
+  - {fileID: 1457785374085908321}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 188
 --- !u!114 &-3383318763172365525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +110,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-1565343942176159289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/HowlingWinds
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/HowlingWinds
+  guid: 8502f194e9245146ba207354585f1cee
+  Banks:
+  - {fileID: 1457785374085908321}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 105853
 --- !u!114 &-1017368221639180471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,14 +173,15 @@ MonoBehaviour:
   - {fileID: 1457785374085908321}
   EditorEvents:
   - {fileID: 7939975554261152336}
-  - {fileID: 1637731443506699796}
   - {fileID: -3634792393137565398}
+  - {fileID: -1565343942176159289}
+  - {fileID: -3444863400629050814}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1457785374085908321}
   StringsBanks:
   - {fileID: 1806101674161576380}
-  stringsBankWriteTime: 637544577854347929
+  stringsBankWriteTime: 637544752444112841
   cacheVersion: 6
 --- !u!114 &660362697174928175
 MonoBehaviour:
@@ -196,7 +243,7 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637544577854221515
+  lastModified: 637544752443992808
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -235,8 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Ambience/Howling-winds
   guid: 8502f194e9245146ba207354585f1cee
-  Banks:
-  - {fileID: 1457785374085908321}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -259,11 +305,11 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637544577854347929
+  lastModified: 637544752444112841
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 824
+    Value: 876
   Exists: 1
 --- !u!114 &2444528987588403857
 MonoBehaviour:

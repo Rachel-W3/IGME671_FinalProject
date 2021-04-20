@@ -17,8 +17,10 @@ public class MainMenu : MonoBehaviour
         [SerializeField] private GameObject containerText;
         [SerializeField] private TransitionObject transitionContainerState;
 #pragma warning restore 0649
-        /**************/
         private IEnumerator transitionContainerInstance;
+
+        // Audio
+        private FMOD.Studio.EventInstance buttonPressed_SFX;
 
         /// <summary>
         /// setup ui on unity start
@@ -29,12 +31,16 @@ public class MainMenu : MonoBehaviour
             // so the instructions appear first thing
             buttonStart.onClick.AddListener(() =>
             {
+                buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Menu_ButtonPressed");
+                buttonPressed_SFX.start();
                 GameStateMachine.Instance.CurrentState = GameState.PAUSED;
             });
 
             // Quit button should exit the game
             buttonQuit.onClick.AddListener(() =>
             {
+                buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Menu_ButtonPressed");
+                buttonPressed_SFX.start();
                 Application.Quit();
             });
         }

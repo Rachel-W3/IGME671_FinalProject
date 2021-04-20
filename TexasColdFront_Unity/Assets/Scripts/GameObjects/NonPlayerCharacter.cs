@@ -10,6 +10,9 @@ namespace tcf.obj
 /// </summary>
 public class NonPlayerCharacter : MonoBehaviour, IPlayerInteractable
 {
+    // Audio
+    private FMOD.Studio.EventInstance buttonPressed_SFX;    
+
     [SerializeField] private NPC            id;
     [SerializeField] private string[]       possibleDialogue;
     [SerializeField] private List<Message>  messages;
@@ -103,6 +106,8 @@ public class NonPlayerCharacter : MonoBehaviour, IPlayerInteractable
     /// </summary>
     public void PerformAction()
     {
+        buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/InGame_ButtonPressed");
+        buttonPressed_SFX.start();
         GameInputSystem.Instance.OnCharacterInteract(id, possibleDialogue[Random.Range(0, possibleDialogue.Length)]);
     }
        

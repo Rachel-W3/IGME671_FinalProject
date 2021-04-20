@@ -18,6 +18,9 @@ public class PauseMenu : MonoBehaviour
 #pragma warning restore 0649
     /**************/ private IEnumerator        transitionContainerInstance;
 
+    // Audio
+    private FMOD.Studio.EventInstance buttonPressed_SFX;
+
     /// <summary>
     /// setup ui on unity start
     /// </summary>
@@ -26,12 +29,16 @@ public class PauseMenu : MonoBehaviour
         // Play button should set game state to GAME
         buttonResume.onClick.AddListener(() =>
         {
+            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/InGame_ButtonPressed");
+            buttonPressed_SFX.start();
             GameStateMachine.Instance.CurrentState = GameState.GAME;
         });
 
         // Quit button should set game state to MENU
         buttonReturn.onClick.AddListener(() =>
         {
+            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Menu_ButtonPressed");
+            buttonPressed_SFX.start();
             GameStateMachine.Instance.CurrentState = GameState.MENU;
         });
     }

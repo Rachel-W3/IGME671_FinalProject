@@ -134,7 +134,7 @@ MonoBehaviour:
   - {fileID: 1457785374085908321}
   StringsBanks:
   - {fileID: 1806101674161576380}
-  stringsBankWriteTime: 637540543270468322
+  stringsBankWriteTime: 637544577854347929
   cacheVersion: 6
 --- !u!114 &660362697174928175
 MonoBehaviour:
@@ -196,7 +196,7 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637540543270338352
+  lastModified: 637544577854221515
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -259,7 +259,7 @@ MonoBehaviour:
   Path: ../TexasColdFront_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637540543270468322
+  lastModified: 637544577854347929
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -341,12 +341,35 @@ MonoBehaviour:
   m_Name: event:/Ambience/FireCrackling
   m_EditorClassIdentifier: 
   Path: event:/Ambience/FireCrackling
-  guid: 5bd1043ca8fa3644b086a4dc94ab010e
+  guid: d0092427ddd0ed45a599146c359f60d8
+  Banks:
+  - {fileID: 1457785374085908321}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 49293
+--- !u!114 &8371965920849468971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Test
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Test
+  guid: d978570e25e0e44cafca9fc7e9a1be66
   Banks:
   - {fileID: 1457785374085908321}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0

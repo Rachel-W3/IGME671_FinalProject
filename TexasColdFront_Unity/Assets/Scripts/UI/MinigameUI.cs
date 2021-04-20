@@ -89,6 +89,9 @@ public class MinigameUI : MonoBehaviour
     /**************/ private Material           blurContainerMaterialInstance;
     /**************/ private IEnumerator        transitionContainerInstance;
 
+    // Audio
+    /**************/ private FMOD.Studio.EventInstance throwWoodToFire_SFX;
+
     /// <summary>
     /// MinigameUI is a singleton accessible by this static Instance
     /// </summary>
@@ -196,7 +199,12 @@ public class MinigameUI : MonoBehaviour
             if (GameStateMachine.Instance.CurrentMinigame == Minigame.FIRE_REFUELING)
             {
                 if (minigameFireRefueling.AddToFire())
+                {
+                    // play wood gathering sound effects
+                    throwWoodToFire_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/ThrowWoodToFire");
+                    throwWoodToFire_SFX.start();
                     FurniturePieceCount--;
+                }
             }
         });
 

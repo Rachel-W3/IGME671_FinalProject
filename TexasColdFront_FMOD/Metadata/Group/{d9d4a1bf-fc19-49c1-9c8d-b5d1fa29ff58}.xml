@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{d9d4a1bf-fc19-49c1-9c8d-b5d1fa29ff58}">
+		<property name="name">
+			<value>Furniture-Minigame</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{9b56644f-9356-4064-bae4-49fb0435fd74}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{5731291c-1307-4f80-b50e-b5ac7b8ae02b}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8fafc5ab-2c77-413a-8636-3774561af5e7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{9b56644f-9356-4064-bae4-49fb0435fd74}">
+		<relationship name="effects">
+			<destination>{08e6323e-3796-4a4d-875a-5adbfda5fd0a}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{5731291c-1307-4f80-b50e-b5ac7b8ae02b}" />
+	<object class="MixerBusFader" id="{08e6323e-3796-4a4d-875a-5adbfda5fd0a}" />
+</objects>

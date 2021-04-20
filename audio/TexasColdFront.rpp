@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.23/win64" 1618892419
+<REAPER_PROJECT 0.1 "6.23/win64" 1618898510
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -10,17 +10,17 @@
   PANLAW 1
   PROJOFFS 0 0 0
   MAXPROJLEN 0 600
-  GRID 273791 3 0.03125 8 1 0 0 0
+  GRID 273535 3 0.03125 8 1 0 0 0
   TIMEMODE 0 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0.07546346487531
-  ZOOM 1510.6647990304041 0 0
-  VZOOMEX 8 300
+  CURSOR 1.65625
+  ZOOM 273.4285931056466 0 0
+  VZOOMEX 8 497
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
-  LOOP 1
+  LOOP 0
   LOOPGRAN 0 4
   RECORD_PATH "samples" ""
   <RECORD_CFG
@@ -29,11 +29,11 @@
   <APPLYFX_CFG
   >
   RENDER_FILE "output"
-  RENDER_PATTERN $track
+  RENDER_PATTERN $item
   RENDER_FMT 0 2 44100
   RENDER_1X 1
   RENDER_RANGE 4 0 0 0 1000
-  RENDER_RESAMPLE 3 0 1
+  RENDER_RESAMPLE 4 0 1
   RENDER_ADDTOPROJ 0
   RENDER_STEMS 32
   RENDER_DITHER 0
@@ -58,8 +58,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0.90489961828553 0
-  SELECTION2 0.90489961828553 0
+  SELECTION 0 0
+  SELECTION2 0 0
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -90,7 +90,7 @@
   >
   <TRACK {30B39F34-8B98-4C3B-93DB-1AF9FE1C2DAA}
     NAME Footsteps_sfx
-    PEAKCOL 16576
+    PEAKCOL 28089584
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -115,7 +115,7 @@
   >
   <TRACK {BFC56BE0-CCB5-4D87-8E45-DBF8EB8FCA3E}
     NAME "Unedited source"
-    PEAKCOL 16576
+    PEAKCOL 28089584
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -162,7 +162,7 @@
   >
   <TRACK {5B1984AA-E952-4877-913A-F9F8DC5B26A6}
     NAME Footsteps_sfx
-    PEAKCOL 16576
+    PEAKCOL 28089584
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -269,7 +269,7 @@
   >
   <TRACK {7D6595F3-5E81-4671-8A49-84F8103B961E}
     NAME FireCrackling_Ambience
-    PEAKCOL 16576
+    PEAKCOL 23057866
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -300,7 +300,7 @@
   >
   <TRACK {F0F3551F-768D-4FBD-9CB2-5CCAB2985A9B}
     NAME "Deep bassy wind sound"
-    PEAKCOL 16576
+    PEAKCOL 23057866
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -375,7 +375,7 @@
   >
   <TRACK {848D8F0B-8D02-4033-9250-13DB4AF97F26}
     NAME "Light fire crackling"
-    PEAKCOL 16576
+    PEAKCOL 23057866
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -460,7 +460,7 @@
   >
   <TRACK {792D5F65-6D14-4830-BCB7-D152AB777ABE}
     NAME Background_Ambience
-    PEAKCOL 16576
+    PEAKCOL 17594548
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -507,7 +507,7 @@
   >
   <TRACK {52313E61-CA17-4C5D-84E4-D914C72B9752}
     NAME FurnitureHit_sfx
-    PEAKCOL 16576
+    PEAKCOL 31202432
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -515,7 +515,7 @@
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 1 1
-    BUSCOMP 0 0 0 0 0
+    BUSCOMP 1 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
     SEL 0
@@ -532,7 +532,7 @@
   >
   <TRACK {A877E63F-C4C1-4D37-AA99-298D09D74C37}
     NAME "Unedited source"
-    PEAKCOL 16576
+    PEAKCOL 31202432
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -546,7 +546,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
+    TRACKHEIGHT 0 1 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -623,21 +623,21 @@
   >
   <TRACK {B9A58A98-4DE1-4AAE-8A92-C8730AA384E9}
     NAME FurnitureHit_sfx
-    PEAKCOL 16576
+    PEAKCOL 31202432
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
-    ISBUS 0 0
+    ISBUS 2 -1
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 295 0 0 0 0 0
+    TRACKHEIGHT 100 1 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -670,7 +670,7 @@
       FADEIN 1 0.004678 0 1 0 0 0
       FADEOUT 1 0.084198 0 1 0 0 0
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {CDC46203-39A9-412D-8A2C-420CCDA39D9F}
       IID 41
       NAME 31784__acclivity__logsonlogs.wav
@@ -681,6 +681,737 @@
       GUID {49452DF7-EF4B-416E-9CC9-D885A7B92B4C}
       <SOURCE WAVE
         FILE "samples\31784__acclivity__logsonlogs.wav"
+      >
+    >
+  >
+  <TRACK {1CC29BF2-6610-477B-A5BB-F9C5557E23B1}
+    NAME FurnitureDestroyed_SFX
+    PEAKCOL 25517311
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 1 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1CC29BF2-6610-477B-A5BB-F9C5557E23B1}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {F05628CF-24FC-4DE2-B75D-5F939BF62C86}
+    NAME "Unedited source"
+    PEAKCOL 25517311
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F05628CF-24FC-4DE2-B75D-5F939BF62C86}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.24709396926397
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {86443C14-08B4-4075-B799-6147B66749A2}
+      IID 44
+      NAME 554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {80A2CD44-7655-4408-A513-3D4980EDFF2A}
+      <SOURCE WAVE
+        FILE "samples\554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.24709396926397
+      SNAPOFFS 0
+      LENGTH 1.13251402579319
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {84D6AAF4-B9CB-4799-B40B-BAD8232E1A6F}
+      IID 45
+      NAME 554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0.24709396926397
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BEDE38F0-7AE3-48B4-84A8-C2EF2C698B1B}
+      <SOURCE WAVE
+        FILE "samples\554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.37960799505715
+      SNAPOFFS 0
+      LENGTH 13.26566283827619
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F37AD800-E532-48FB-9D12-BE8B47857939}
+      IID 46
+      NAME 554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 1.37960799505715
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {89C2F72F-EB8E-44E6-8504-1BAE5FFD9F64}
+      <SOURCE WAVE
+        FILE "samples\554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav"
+      >
+    >
+    <ITEM
+      POSITION 15.5
+      SNAPOFFS 0
+      LENGTH 8.92904866673723
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DDA53A4C-3328-458B-87B3-10356D33A7B4}
+      IID 48
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E36D5007-1A9C-4543-ABA9-FB26E1A2A144}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 24.42904866673723
+      SNAPOFFS 0
+      LENGTH 0.80823982354796
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {648F816B-49E0-49E2-92E7-50F6728DB300}
+      IID 68
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 8.92904866673723
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {78A0CCBB-E43D-4691-96A8-FC3ABBF405DD}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 25.2372884902852
+      SNAPOFFS 0
+      LENGTH 2.80863338682918
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {41977F14-5694-4E60-BCBB-AD92DEB151B7}
+      IID 69
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 9.7372884902852
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {37CB0DB6-1A5E-4488-A85D-886198A8A9AA}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 28.04592187711437
+      SNAPOFFS 0
+      LENGTH 1.07091776620105
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {69D76A59-00E5-421D-BC58-6A6367CC2BF5}
+      IID 70
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 12.54592187711437
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FDB65A3D-8C8E-45C5-91B3-812311D6CF39}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 29.11683964331542
+      SNAPOFFS 0
+      LENGTH 0.68497894205706
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D60785AB-809E-4449-94E9-1153F1D2090A}
+      IID 71
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 13.61683964331542
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C1D79FE8-3C9F-490E-AC10-8C32DE12676C}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 29.80181858537248
+      SNAPOFFS 0
+      LENGTH 1.03684808129419
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2157F892-14E7-43A9-9406-2FF8A1065542}
+      IID 74
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 14.30181858537248
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A4BF87A3-7FE2-4F1F-824B-D258544FE5DB}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+  >
+  <TRACK {90A79173-D8BC-40EA-9D05-0B2E2CA42EC3}
+    NAME FurnitureDestroyed_SFX
+    PEAKCOL 25517311
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {90A79173-D8BC-40EA-9D05-0B2E2CA42EC3}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {BFCB06FB-5847-49B3-A9AE-352EBE010442}
+    NAME "Wooden log crash and creak"
+    PEAKCOL 25517311
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BFCB06FB-5847-49B3-A9AE-352EBE010442}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 24 52 754 466
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAqAAAAAEAAAAAABAA
+        IQAAAAQAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAANzM6W1Z7a5AgO21oPfGsD4AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAAAA8CAABhAQAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {7C560B5A-77A9-4227-A1A1-7B91BA90D093}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.78125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.314746 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1AFFF95B-C0B9-4C55-9266-63E1784F6556}
+      IID 45
+      NAME 554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav
+      VOLPAN 0.325 0 1 -1
+      SOFFS 0.49709396926397
+      PLAYRATE 1 1 5 -1 0 0.0025
+      CHANMODE 0
+      GUID {A6ED0EB8-EB88-47A8-9150-202F53E6864F}
+      <SOURCE WAVE
+        FILE "samples\554128__nox-sound__foley-wood-log-small-fall-closeground-stereo-dr05.wav"
+      >
+    >
+  >
+  <TRACK {E213A5EE-7947-497C-AFA2-C4A23A6A759A}
+    NAME "Wooden plank clattering"
+    PEAKCOL 25517311
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 2 -2
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {E213A5EE-7947-497C-AFA2-C4A23A6A759A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.78125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010492 0 1 0 0 0
+      FADEOUT 1.1 0.01 0.5 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E7758D3D-D335-464C-ACF9-EEA8E22966D4}
+      IID 52
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 12.65625
+      PLAYRATE 1 1 -5 -1 0 0.0025
+      CHANMODE 0
+      GUID {AB87DDE9-C235-4965-A7ED-E2668783CFF9}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.28125
+      SNAPOFFS 0
+      LENGTH 0.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 0.5 1 1 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CAB2B894-715E-45B7-8A9F-185B37C39D3A}
+      IID 50
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 6.25
+      PLAYRATE 1 1 -5 -1 0 0.0025
+      CHANMODE 0
+      GUID {0E3ADBCA-1A74-4085-B812-544774F6331B}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+  >
+  <TRACK {8ED19335-0E15-4B52-BF3D-1068F54E150F}
+    NAME FurnitureGathering_SFX
+    PEAKCOL 23430819
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 1 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8ED19335-0E15-4B52-BF3D-1068F54E150F}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {4563B651-F16A-4774-BE26-0EF1D2B4E793}
+    NAME "Unedited source"
+    PEAKCOL 23430819
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4563B651-F16A-4774-BE26-0EF1D2B4E793}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 2.15625
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {897549AE-DE98-427E-B14B-1FD21D3E7AC6}
+      IID 48
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {20B8873D-F991-488A-85DE-0F40221D0809}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.46875
+      SNAPOFFS 0
+      LENGTH 4.8125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7A838A54-D6FE-40E3-95EA-80C1B8F232E4}
+      IID 59
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.46875
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F6888177-85D9-427C-9868-68BCB7C80E97}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 7.65625
+      SNAPOFFS 0
+      LENGTH 0.4375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {0249147C-AE65-4FC2-B8B8-CFA302F92AF5}
+      IID 62
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 7.65625
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B3FE1B8A-86CD-454B-AF68-9AA50AC55F49}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 8.4375
+      SNAPOFFS 0
+      LENGTH 6.90116666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A2FE511A-F55D-4A85-8361-C4AF3D1C2914}
+      IID 64
+      NAME 537755__tim-verberne__wooden-planks-01.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 8.4375
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {35F4A91E-6112-431A-A89A-79C1545288E7}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+  >
+  <TRACK {F3935724-2FE4-4759-8895-1866157895B7}
+    NAME FurnitureGathering_SFX
+    PEAKCOL 23430819
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 2 -1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 101 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F3935724-2FE4-4759-8895-1866157895B7}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 24 52 754 466
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.1881094495646
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.007351 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6B4B8EAC-CFA4-426C-928C-787DF4BCB4C1}
+      IID 58
+      NAME furniture-gathering-1.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.24840803176148
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A3B76247-2FCE-49AB-BAA5-003722C1603C}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.61076275199747
+      SNAPOFFS 0
+      LENGTH 0.31593905554784
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005434 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1694B79D-8F15-4CF7-A2B6-F0429F3447DA}
+      IID 60
+      NAME furniture-gathering-2.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 7.34031094445215
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3C109AE6-A039-4A8D-8F8F-A9D237556183}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.26906990983905
+      SNAPOFFS 0
+      LENGTH 0.17143187133372
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005577 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {637324FC-B3FF-4E44-BB4F-6CAA7524E663}
+      IID 63
+      NAME furniture-gathering-3.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 8.21015376162093
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6A21273B-9A51-4EFA-ADFB-E92FB606AC8F}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+  >
+  <TRACK {F8C0557C-9B01-429B-934D-C60505DB84E0}
+    NAME ThrowingWoodToFire_SFX
+    PEAKCOL 25517311
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F8C0557C-9B01-429B-934D-C60505DB84E0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.4375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010492 0 1 0 0 0
+      FADEOUT 1 0.146293 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {851C1928-3635-468E-B5DF-8501415AC42B}
+      IID 52
+      NAME throw-wood-1.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 12.65625
+      PLAYRATE 1 1 -5 -1 0 0.0025
+      CHANMODE 0
+      GUID {7F8EBEF7-0D88-4534-9F57-E9848B6921B5}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 0.734375
+      SNAPOFFS 0
+      LENGTH 0.40625
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.002611 0 1 0 0 0
+      FADEOUT 1 0.257886 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {23466F16-4684-4740-A68F-E3D8EF7630E9}
+      IID 68
+      NAME throw-wood-2.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 9.00579139312563
+      PLAYRATE 1 1 -5 -1 0 0.0025
+      CHANMODE 0
+      GUID {661347C8-28BF-4F0C-B2B4-AE470F34CDC3}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.59375
+      SNAPOFFS 0
+      LENGTH 0.203125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004748 0 1 0 0 0
+      FADEOUT 1 0.068382 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {1FE1D09D-B8DF-4AE6-ACC9-51179722134F}
+      IID 74
+      NAME throw-wood-3.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 14.38490351104033
+      PLAYRATE 1 1 -5 -1 0 0.0025
+      CHANMODE 0
+      GUID {97000AA5-E791-4D63-9A8A-5E15A0B5BFAE}
+      <SOURCE WAVE
+        FILE "samples\537755__tim-verberne__wooden-planks-01.wav"
       >
     >
   >

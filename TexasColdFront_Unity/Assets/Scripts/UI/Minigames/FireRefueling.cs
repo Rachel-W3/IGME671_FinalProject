@@ -33,9 +33,10 @@ public class FireRefueling : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
+
         // fire stoke button gives small boost to temperature on click and can only be clicked every fireStokeButtonWaitTime
         fireStokeButton.onClick.AddListener(() => {
-            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
             buttonPressed_SFX.start();
             if (Resources.Instance.FuelAmount > 0) { 
                 Resources.Instance.Temperature += fireStokeIncrease;

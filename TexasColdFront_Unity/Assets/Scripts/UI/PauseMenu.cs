@@ -20,16 +20,19 @@ public class PauseMenu : MonoBehaviour
 
     // Audio
     private FMOD.Studio.EventInstance buttonPressed_SFX;
+    private FMOD.Studio.EventInstance menu_buttonPressed_SFX;
 
     /// <summary>
     /// setup ui on unity start
     /// </summary>
     private void Start()
     {
+        buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
+        menu_buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/Menu_ButtonPressed");
+
         // Play button should set game state to GAME
         buttonResume.onClick.AddListener(() =>
         {
-            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
             buttonPressed_SFX.start();
             GameStateMachine.Instance.CurrentState = GameState.GAME;
         });
@@ -37,8 +40,7 @@ public class PauseMenu : MonoBehaviour
         // Quit button should set game state to MENU
         buttonReturn.onClick.AddListener(() =>
         {
-            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/Menu_ButtonPressed");
-            buttonPressed_SFX.start();
+            menu_buttonPressed_SFX.start();
             GameStateMachine.Instance.CurrentState = GameState.MENU;
         });
     }

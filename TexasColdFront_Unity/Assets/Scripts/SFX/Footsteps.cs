@@ -21,6 +21,7 @@ namespace tcf.controller
 
         private void Start()
         {
+            footstep = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Footsteps");
             InvokeRepeating("PlayFootsteps", 0.0f, movingSpeed);
         }
 
@@ -44,7 +45,6 @@ namespace tcf.controller
         {
             if (isPlayerMoving)
             {
-                footstep = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Footsteps");
                 footstep.start();
             }
         }

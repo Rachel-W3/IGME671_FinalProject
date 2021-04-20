@@ -19,6 +19,9 @@ public class SnowGathering : MonoBehaviour
     [SerializeField] private Button                     snowBtn;
     [SerializeField] private DraggableSprite            snowDraggableTemplate;
     /**************/ private List<DraggableSprite>      spawnedDraggables;
+
+    // Audio
+    private FMOD.Studio.EventInstance snowballGathering_sfx;
     
     /// <summary>
     /// Gets whether the bucket is full or not
@@ -46,9 +49,11 @@ public class SnowGathering : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        snowballGathering_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SnowballGathering");
         snowBtn.onClick.AddListener(() => {
             if (spawnedDraggables.Count < 3)
             {
+                snowballGathering_sfx.start();
                 RectTransform parentTransform = snowDraggableTemplate.transform.parent.GetComponent<RectTransform>();
                 for (int i = 0; i < 3; i++)
                 {

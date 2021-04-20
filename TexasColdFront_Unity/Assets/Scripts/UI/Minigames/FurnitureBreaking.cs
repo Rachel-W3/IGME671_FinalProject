@@ -31,20 +31,25 @@ public class FurnitureBreaking : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        // Init sound events
+        furnitureHit_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureHit");
+        furnitureDestroyed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureDestroyed");
+        furnitureGathering_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureGathering");
+        
         // the core gameplay of the minigame is with the listener of this button
         btnFurnishing.onClick.AddListener(() => {
             // increment the button click count; if the right number is hit, spawn pieces
             btnFurnishingClickCount++;
+            
             // play click sound effect
-            furnitureHit_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureHit");
             furnitureHit_SFX.start();
+            
             if (btnFurnishingClickCount >= btnPieceReqClicks)
             {
                 // make the button noninteractable and loop to spawn pieces
                 btnFurnishing.interactable = false;
                 furnitureDestroyed = true;
                 // play furniture destroyed sound effect
-                furnitureDestroyed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureDestroyed");
                 furnitureDestroyed_SFX.start();
                 for (int i = 0; i < btnPieceReqClicks; i++)
                 {
@@ -66,7 +71,6 @@ public class FurnitureBreaking : MonoBehaviour
                     btnPieceInstances.Add(instanceBtn);
                     instanceBtn.onClick.AddListener(() => {
                         // play wood gathering sound effects
-                        furnitureGathering_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureGathering");
                         furnitureGathering_SFX.start();
                         // increment furniture piece count and destroy the button; once all the furniture is clicked,
                         manager.FurniturePieceCount++;

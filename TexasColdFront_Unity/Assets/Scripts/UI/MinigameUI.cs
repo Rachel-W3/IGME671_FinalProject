@@ -91,11 +91,12 @@ public class MinigameUI : MonoBehaviour
 
     // Audio
     /**************/ private FMOD.Studio.EventInstance throwWoodToFire_SFX;
+    /**************/ private FMOD.Studio.EventInstance bucketPlacedOnSnow_sfx;
 
-    /// <summary>
-    /// MinigameUI is a singleton accessible by this static Instance
-    /// </summary>
-    public static MinigameUI Instance { get; private set; }
+        /// <summary>
+        /// MinigameUI is a singleton accessible by this static Instance
+        /// </summary>
+        public static MinigameUI Instance { get; private set; }
 
     /// <summary>
     /// Gets/sets the current fill state of the bucket and updates the display text
@@ -167,8 +168,14 @@ public class MinigameUI : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        // Initializing sounds
+        bucketPlacedOnSnow_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/BucketPlacedOnSnow");
+        throwWoodToFire_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/ThrowWoodToFire");
+
         bucket.button.onClick.AddListener(() => {
-            switch(GameStateMachine.Instance.CurrentMinigame)
+            bucketPlacedOnSnow_sfx.start();
+
+            switch (GameStateMachine.Instance.CurrentMinigame)
             {
                 case Minigame.SNOW_GATHERING:
                     if (minigameSnowGathering.BucketState)
@@ -201,7 +208,6 @@ public class MinigameUI : MonoBehaviour
                 if (minigameFireRefueling.AddToFire())
                 {
                     // play wood throwing sound effects
-                    throwWoodToFire_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/ThrowWoodToFire");
                     throwWoodToFire_SFX.start();
                     FurniturePieceCount--;
                 }

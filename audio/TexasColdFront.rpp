@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.23/win64" 1618907615
+<REAPER_PROJECT 0.1 "6.23/win64" 1618914301
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -15,8 +15,8 @@
   VIDEO_CONFIG 0 0 256
   PANMODE 3
   CURSOR 0
-  ZOOM 1073.2558718594626 0 0
-  VZOOMEX 8 1044
+  ZOOM 2126.3411595184712 0 0
+  VZOOMEX 8 1531
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -32,10 +32,10 @@
   RENDER_PATTERN $track
   RENDER_FMT 0 2 44100
   RENDER_1X 1
-  RENDER_RANGE 4 0 0 0 1000
+  RENDER_RANGE 2 0 0 0 1000
   RENDER_RESAMPLE 4 0 1
   RENDER_ADDTOPROJ 0
-  RENDER_STEMS 32
+  RENDER_STEMS 128
   RENDER_DITHER 0
   TIMELOCKMODE 1
   TEMPOENVLOCKMODE 1
@@ -58,8 +58,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 0
-  SELECTION2 0 0
+  SELECTION 0.24891925386434 0
+  SELECTION2 0.24891925386434 0
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -1878,11 +1878,11 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 1 1
-    BUSCOMP 0 0 0 0 0
+    BUSCOMP 1 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
     SEL 0
@@ -1913,7 +1913,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 125 0 0 0 0 0
+    TRACKHEIGHT 125 1 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2089,10 +2089,10 @@
     BUSCOMP 1 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
+    TRACKHEIGHT 0 1 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2107,7 +2107,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 0 0
@@ -2147,28 +2147,6 @@
         FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
       >
     >
-    <ITEM
-      POSITION 1.57717515426942
-      SNAPOFFS 0
-      LENGTH 0.32768447949697
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.00383 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
-      MUTE 0 0
-      SEL 0
-      IGUID {A29A7F2B-5481-474B-90EC-9FCF405A315C}
-      IID 90
-      NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
-      VOLPAN 1 0 3.636777 -1
-      SOFFS 11.32890352210339
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {4DE7F6F8-6D84-437E-91A3-76A2343EEEFE}
-      <SOURCE WAVE
-        FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
-      >
-    >
   >
   <TRACK {D862DC74-676A-403B-90FC-78A3C0A6C0D7}
     NAME "Handle rattling"
@@ -2176,7 +2154,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 2 -2
@@ -2203,7 +2181,7 @@
       FADEIN 1 0.002359 0 1 0 0 0
       FADEOUT 1 0.094313 0 1 0 0 0
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {F351E0C0-C5F2-4DA7-A863-C03AA8AF97A2}
       IID 86
       NAME 545546__rsellick__metal-can-bucket-ring-ting.wav
@@ -2214,6 +2192,260 @@
       GUID {C9FF0046-A17E-4F31-9CF3-CD511780E911}
       <SOURCE WAVE
         FILE "samples\545546__rsellick__metal-can-bucket-ring-ting.wav"
+      >
+    >
+  >
+  <TRACK {94239CE2-6265-4EC3-BC60-88F76F5BB2B5}
+    NAME Snow_SFX
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {94239CE2-6265-4EC3-BC60-88F76F5BB2B5}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {6F117934-90A1-4F18-8E89-1316FCD65B07}
+    NAME "Unedited source"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6F117934-90A1-4F18-8E89-1316FCD65B07}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.99897173122526
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CD673F8E-0B53-4761-A544-59D7DA88DBAB}
+      IID 96
+      NAME 421022__inspectorj__running-snow-a.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8479A2AB-7CDB-4480-9938-03F8D7FA1F7C}
+      <SOURCE WAVE
+        FILE "samples\421022__inspectorj__running-snow-a.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.99897173122526
+      SNAPOFFS 0
+      LENGTH 0.36715807308219
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FC2C0A25-C52E-45BC-92BA-9B76E71C70C5}
+      IID 97
+      NAME 421022__inspectorj__running-snow-a.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 1.99897173122526
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5F95727F-7587-4BF1-ADFA-C0D7E36D8682}
+      <SOURCE WAVE
+        FILE "samples\421022__inspectorj__running-snow-a.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.36612980430745
+      SNAPOFFS 0
+      LENGTH 4.37786130158069
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {68655282-1A0F-4DCD-B0FF-984DCCE8609D}
+      IID 98
+      NAME 421022__inspectorj__running-snow-a.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.36612980430745
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0ED3CE5C-5123-4079-8E71-D9FCCE2CE965}
+      <SOURCE WAVE
+        FILE "samples\421022__inspectorj__running-snow-a.wav"
+      >
+    >
+    <ITEM
+      POSITION 6.74399110588814
+      SNAPOFFS 0
+      LENGTH 0.36206893681287
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {FF6C80D0-3BBF-471B-B39E-CBD0D39ED94A}
+      IID 100
+      NAME 421022__inspectorj__running-snow-a.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 6.74399110588814
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5A972DC4-A2DF-49A5-9496-6D90E301C17E}
+      <SOURCE WAVE
+        FILE "samples\421022__inspectorj__running-snow-a.wav"
+      >
+    >
+    <ITEM
+      POSITION 7.10606004270101
+      SNAPOFFS 0
+      LENGTH 19.77387193008811
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {86BC7A75-C78C-4747-A35B-8269878EF443}
+      IID 101
+      NAME 421022__inspectorj__running-snow-a.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 7.10606004270101
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B0B7037C-A884-4CDC-A328-7253E5765883}
+      <SOURCE WAVE
+        FILE "samples\421022__inspectorj__running-snow-a.wav"
+      >
+    >
+  >
+  <TRACK {F980698B-C277-4187-A834-6F22024258EB}
+    NAME SnowCrunching_sfx
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 111 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F980698B-C277-4187-A834-6F22024258EB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.35836206085225
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.004553 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A574BB1F-E773-4E28-B714-2B70B52B0418}
+      IID 97
+      NAME 421022__inspectorj__running-snow-a.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 2.04197611466711
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B36DCE7E-14B0-45E9-ACE1-3731A5E8BAA5}
+      <SOURCE WAVE
+        FILE "samples\421022__inspectorj__running-snow-a.wav"
+      >
+    >
+  >
+  <TRACK {BA7BBE06-B1C3-45AE-9A98-4F9B709F877B}
+    NAME SnowGathering_sfx
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 2 -1
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 116 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BA7BBE06-B1C3-45AE-9A98-4F9B709F877B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 0.14819904487312
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 3 0.017871 0 3 0 -1 -1
+      FADEOUT 1 0.049961 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {B342A106-11B4-4B7E-ABB9-F027C2FEAACA}
+      IID 100
+      NAME 421022__inspectorj__running-snow-a.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 6.81330405331797
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1B17DB70-9B47-48F5-AA94-FD93A210ECDF}
+      <SOURCE WAVE
+        FILE "samples\421022__inspectorj__running-snow-a.wav"
       >
     >
   >

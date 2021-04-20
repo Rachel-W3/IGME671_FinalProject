@@ -26,6 +26,7 @@ public class SnowMelting : MonoBehaviour
     // Audio
     //private FMODUnity.StudioEventEmitter waterBoiling_emitter;
     private FMOD.Studio.EventInstance waterBoiling_sfx;
+    private FMOD.Studio.EventInstance waterSplashing_sfx;
 
     /// <summary>
     /// Determines if the bucket is placed in the minigame
@@ -38,6 +39,7 @@ public class SnowMelting : MonoBehaviour
     private void Start()
     {
         waterBoiling_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/WaterBoiling");
+        waterSplashing_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/WaterSplashingInBucket");
         waterBoiling_sfx.setParameterByName("BucketState", 0);
         bucketBtn.onClick.AddListener(() => {
             ToggleBucket(!BucketPlaced);
@@ -125,6 +127,7 @@ public class SnowMelting : MonoBehaviour
         bucketImg.sprite = manager.GetBucketSprite(manager.BucketFillState);
         if (!state && manager.BucketFillState == BucketState.BOILED)
         {
+            waterSplashing_sfx.start();
             Resources.Instance.AddWater(Constants.WATER_PER_BUCKET);
             manager.BucketFillState = BucketState.EMPTY;
         }

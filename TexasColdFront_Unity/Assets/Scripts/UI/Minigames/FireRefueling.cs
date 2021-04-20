@@ -18,6 +18,7 @@ public class FireRefueling : MonoBehaviour
 {
     [SerializeField] private GameObject[]   fuelLevelIndicator;
     [SerializeField] private GameObject     fireLitIndicator;
+    [SerializeField] private GameObject     fireSpriteMinigameObject;
     [SerializeField] private Button         fireStokeButton;
     [SerializeField] private TMP_Text       fireStokeIndicatorText;
     [SerializeField] private MinigameUI     manager;
@@ -30,6 +31,7 @@ public class FireRefueling : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        fireSpriteMinigameObject.SetActive(false);
         // fire stoke button gives small boost to temperature on click and can only be clicked every fireStokeButtonWaitTime
         fireStokeButton.onClick.AddListener(() => {
             if (Resources.Instance.FuelAmount > 0) { 
@@ -83,12 +85,17 @@ public class FireRefueling : MonoBehaviour
                 else
                     fuelLevelIndicator[i].SetActive(false);
             fireLitIndicator.SetActive(true);
+
+            // Show active fire in the game's world space as well as the UI
+            fireSpriteMinigameObject.SetActive(true);
         }
         else
         {
             foreach(GameObject go in fuelLevelIndicator)
                 go.SetActive(false);
             fireLitIndicator.SetActive(false);
+            // Disable fire in the game's world space as well as the UI
+            fireSpriteMinigameObject.SetActive(false);
         }
     }
 

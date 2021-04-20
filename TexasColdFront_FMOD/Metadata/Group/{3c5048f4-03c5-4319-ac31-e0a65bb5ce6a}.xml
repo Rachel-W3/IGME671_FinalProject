@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{3c5048f4-03c5-4319-ac31-e0a65bb5ce6a}">
+		<property name="name">
+			<value>FireFueling-Minigame</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{12ce9bba-71a8-4acd-88a4-32f50d8d2549}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{886088fd-f616-48a6-82de-c9ce565d3985}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8fafc5ab-2c77-413a-8636-3774561af5e7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{12ce9bba-71a8-4acd-88a4-32f50d8d2549}">
+		<relationship name="effects">
+			<destination>{3a7b102d-3fac-471e-974e-0901876df297}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{886088fd-f616-48a6-82de-c9ce565d3985}" />
+	<object class="MixerBusFader" id="{3a7b102d-3fac-471e-974e-0901876df297}" />
+</objects>

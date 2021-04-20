@@ -506,6 +506,35 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1e642a13804ad4448ff446dd6c637c2, type: 3}
+--- !u!1 &250474437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1169182037053908018, guid: ba0d1c366181eb0418c360d0e3b57fff,
+    type: 3}
+  m_PrefabInstance: {fileID: 1169182037614589897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &250474438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250474437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambience/FireCrackling
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &277584366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -926,35 +955,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 351594283}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &388524294 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8468629918590766312, guid: 3b6f78d53faa0504dbc4e9003ce90969,
-    type: 3}
-  m_PrefabInstance: {fileID: 861725574}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &388524297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388524294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Ambience/FireCrackling
-  PlayEvent: 11
-  StopEvent: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1001 &443516909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1980,7 +1980,7 @@ PrefabInstance:
     - target: {fileID: 4411749067611177084, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00040913225
+      value: 0.000071525574
       objectReference: {fileID: 0}
     - target: {fileID: 4411749067611177084, guid: 96261587a2996ac408ae8190c32a000d,
         type: 3}
@@ -2135,7 +2135,7 @@ PrefabInstance:
     - target: {fileID: 561330554485893209, guid: 3b6f78d53faa0504dbc4e9003ce90969,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 561330554485893209, guid: 3b6f78d53faa0504dbc4e9003ce90969,
         type: 3}
@@ -3655,7 +3655,7 @@ PrefabInstance:
     - target: {fileID: 1169182037053908021, guid: ba0d1c366181eb0418c360d0e3b57fff,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -55
       objectReference: {fileID: 0}
     - target: {fileID: 1169182037053908021, guid: ba0d1c366181eb0418c360d0e3b57fff,
         type: 3}
@@ -3840,6 +3840,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8496795381926883992, guid: 6e9d0b832dab97c4789a6527f7411044,
+        type: 3}
+      propertyPath: fireSpriteMinigameObject
+      value: 
+      objectReference: {fileID: 250474437}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e9d0b832dab97c4789a6527f7411044, type: 3}
 --- !u!1001 &1804426651603946406

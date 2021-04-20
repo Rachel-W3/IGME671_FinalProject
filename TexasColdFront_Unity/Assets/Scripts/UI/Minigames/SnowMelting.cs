@@ -23,6 +23,10 @@ public class SnowMelting : MonoBehaviour
     /**************/ private float          timer;
     /**************/ private const float    timeUntilStateChange = 3.0f;
 
+    // Audio
+    //private FMODUnity.StudioEventEmitter waterBoiling_emitter;
+    private FMOD.Studio.EventInstance waterBoiling_sfx;
+
     /// <summary>
     /// Determines if the bucket is placed in the minigame
     /// </summary>
@@ -33,6 +37,8 @@ public class SnowMelting : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        waterBoiling_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/WaterBoiling");
+        waterBoiling_sfx.setParameterByName("BucketState", 0);
         bucketBtn.onClick.AddListener(() => {
             ToggleBucket(!BucketPlaced);
         });
@@ -51,14 +57,17 @@ public class SnowMelting : MonoBehaviour
                 switch(manager.BucketFillState)
                 {
                     case BucketState.SNOWY:
+                        waterBoiling_sfx.setParameterByName("BucketState", 0);
                         manager.BucketFillState = BucketState.WATER;
                         bucketImg.sprite = manager.GetBucketSprite(BucketState.WATER);
                         break;
                     case BucketState.WATER:
+                        waterBoiling_sfx.setParameterByName("BucketState", 1);
                         manager.BucketFillState = BucketState.BOILED;
                         bucketImg.sprite = manager.GetBucketSprite(BucketState.BOILED);
                         break;
                     case BucketState.BOILED:
+                        waterBoiling_sfx.setParameterByName("BucketState", 2);
                         manager.BucketFillState = BucketState.EMPTY;
                         bucketImg.sprite = manager.GetBucketSprite(BucketState.EMPTY);
                         break;
@@ -108,6 +117,10 @@ public class SnowMelting : MonoBehaviour
     /// <param name="state">The new state of the bucket's UI element</param>
     public void ToggleBucket(bool state)
     {
+        if (state)
+            waterBoiling_sfx.start();
+        else
+            waterBoiling_sfx.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         bucketBtn.interactable = state;
         bucketImg.sprite = manager.GetBucketSprite(manager.BucketFillState);
         if (!state && manager.BucketFillState == BucketState.BOILED)

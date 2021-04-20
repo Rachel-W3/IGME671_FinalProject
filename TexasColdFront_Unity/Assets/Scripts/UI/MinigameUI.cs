@@ -90,8 +90,9 @@ public class MinigameUI : MonoBehaviour
     /**************/ private IEnumerator        transitionContainerInstance;
 
     // Audio
-    /**************/ private FMOD.Studio.EventInstance throwWoodToFire_SFX;
+    /**************/ private FMOD.Studio.EventInstance throwWoodToFire_sfx;
     /**************/ private FMOD.Studio.EventInstance bucketPlacedOnSnow_sfx;
+    /**************/ private FMOD.Studio.EventInstance startStove_sfx;
 
         /// <summary>
         /// MinigameUI is a singleton accessible by this static Instance
@@ -170,14 +171,14 @@ public class MinigameUI : MonoBehaviour
     {
         // Initializing sounds
         bucketPlacedOnSnow_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/BucketPlacedOnSnow");
-        throwWoodToFire_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/ThrowWoodToFire");
+        throwWoodToFire_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/ThrowWoodToFire");
+        startStove_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/StartStove");
 
         bucket.button.onClick.AddListener(() => {
-            bucketPlacedOnSnow_sfx.start();
-
             switch (GameStateMachine.Instance.CurrentMinigame)
             {
                 case Minigame.SNOW_GATHERING:
+                    bucketPlacedOnSnow_sfx.start();
                     if (minigameSnowGathering.BucketState)
                     {
                         if (minigameSnowGathering.BucketIsFull)
@@ -191,6 +192,8 @@ public class MinigameUI : MonoBehaviour
                 case Minigame.SNOW_MELTING:
                     if (BucketFillState != BucketState.EMPTY)
                     {
+                        if (!minigameSnowMelting.BucketPlaced)
+                            startStove_sfx.start();
                         minigameSnowMelting.ToggleBucket(!minigameSnowMelting.BucketPlaced);
                         if (BucketFillState == BucketState.BOILED)
                         {
@@ -208,7 +211,7 @@ public class MinigameUI : MonoBehaviour
                 if (minigameFireRefueling.AddToFire())
                 {
                     // play wood throwing sound effects
-                    throwWoodToFire_SFX.start();
+                    throwWoodToFire_sfx.start();
                     FurniturePieceCount--;
                 }
             }

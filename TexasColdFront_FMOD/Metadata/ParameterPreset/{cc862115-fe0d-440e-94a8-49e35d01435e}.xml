@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{cc862115-fe0d-440e-94a8-49e35d01435e}">
+		<property name="name">
+			<value>BucketState</value>
+		</property>
+		<relationship name="folder">
+			<destination>{cf05457f-51cf-458e-9c17-0174a20c06dc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9504c77e-a0ac-4904-92fe-d11e204d4510}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9504c77e-a0ac-4904-92fe-d11e204d4510}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>SNOWY</value>
+			<value>WATER</value>
+			<value>BOILED</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -7,12 +7,12 @@ namespace tcf.ui
     public class FireToggler : MonoBehaviour
     {
         [SerializeField] private GameObject                   fireSprite;
-        /**************/ private FMODUnity.StudioEventEmitter emitter;
+        /**************/ private FMODUnity.StudioEventEmitter fireCrackling_emitter;
 
         // Start is called before the first frame update
         void Start()
         {
-            emitter = fireSprite.GetComponent<FMODUnity.StudioEventEmitter>();
+            fireCrackling_emitter = fireSprite.GetComponent<FMODUnity.StudioEventEmitter>();
             fireSprite.SetActive(false);
         }
 
@@ -23,7 +23,7 @@ namespace tcf.ui
                 fireSprite.SetActive(true);
             else
                 fireSprite.SetActive(false);
-            emitter.SetParameter("fuelLevel", Resources.Instance.FuelAmount);
+            fireCrackling_emitter.SetParameter("fuelLevel", Resources.Instance.FuelAmount);
         }
     }
 }

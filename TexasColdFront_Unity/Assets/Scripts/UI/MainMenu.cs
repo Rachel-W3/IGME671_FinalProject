@@ -31,7 +31,7 @@ public class MainMenu : MonoBehaviour
             // so the instructions appear first thing
             buttonStart.onClick.AddListener(() =>
             {
-                buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Menu_ButtonPressed");
+                buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/Menu_ButtonPressed");
                 buttonPressed_SFX.start();
                 GameStateMachine.Instance.CurrentState = GameState.PAUSED;
             });
@@ -39,7 +39,7 @@ public class MainMenu : MonoBehaviour
             // Quit button should exit the game
             buttonQuit.onClick.AddListener(() =>
             {
-                buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Menu_ButtonPressed");
+                buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/Menu_ButtonPressed");
                 buttonPressed_SFX.start();
                 Application.Quit();
             });

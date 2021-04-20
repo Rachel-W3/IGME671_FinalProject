@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour
         // Play button should set game state to GAME
         buttonResume.onClick.AddListener(() =>
         {
-            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/InGame_ButtonPressed");
+            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
             buttonPressed_SFX.start();
             GameStateMachine.Instance.CurrentState = GameState.GAME;
         });
@@ -37,7 +37,7 @@ public class PauseMenu : MonoBehaviour
         // Quit button should set game state to MENU
         buttonReturn.onClick.AddListener(() =>
         {
-            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/Menu_ButtonPressed");
+            buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/Menu_ButtonPressed");
             buttonPressed_SFX.start();
             GameStateMachine.Instance.CurrentState = GameState.MENU;
         });

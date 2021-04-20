@@ -200,7 +200,7 @@ public class MinigameUI : MonoBehaviour
             {
                 if (minigameFireRefueling.AddToFire())
                 {
-                    // play wood gathering sound effects
+                    // play wood throwing sound effects
                     throwWoodToFire_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/ThrowWoodToFire");
                     throwWoodToFire_SFX.start();
                     FurniturePieceCount--;

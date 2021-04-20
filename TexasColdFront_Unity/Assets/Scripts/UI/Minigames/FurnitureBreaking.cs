@@ -23,6 +23,7 @@ public class FurnitureBreaking : MonoBehaviour
     /**************/ private const int                 btnPieceReqClicks = 5;
     /**************/ private bool                      furnitureDestroyed;
     /**************/ private FMOD.Studio.EventInstance furnitureHit_SFX;
+    /**************/ private FMOD.Studio.EventInstance furnitureDestroyed_SFX;
 
     /// <summary>
     /// add listener to button on start
@@ -33,6 +34,7 @@ public class FurnitureBreaking : MonoBehaviour
         btnFurnishing.onClick.AddListener(() => {
             // increment the button click count; if the right number is hit, spawn pieces
             btnFurnishingClickCount++;
+            // play click sound effect
             furnitureHit_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureHit");
             furnitureHit_SFX.start();
             if (btnFurnishingClickCount >= btnPieceReqClicks)
@@ -40,6 +42,9 @@ public class FurnitureBreaking : MonoBehaviour
                 // make the button noninteractable and loop to spawn pieces
                 btnFurnishing.interactable = false;
                 furnitureDestroyed = true;
+                // play furniture destroyed sound effect
+                furnitureDestroyed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/FurnitureDestroyed");
+                furnitureDestroyed_SFX.start();
                 for (int i = 0; i < btnPieceReqClicks; i++)
                 {
                     // instantiate with random position and sprite

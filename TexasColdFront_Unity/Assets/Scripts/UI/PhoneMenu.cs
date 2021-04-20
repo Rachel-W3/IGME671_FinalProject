@@ -105,12 +105,14 @@ public class PhoneMenu : MonoBehaviour
     /**************/ private const string                       statusFine      = "<color=#ff9>Fine</color>";
     /**************/ private const string                       statusHead      = "Status: ";
     /**************/ private const string                       statusSick      = "<color=#9f9>Sick</color>\n";
+    /**************/ private FMOD.Studio.EventInstance          buttonPressed_sfx;
 
     /// <summary>
     /// disable container and setup ui on start
     /// </summary>
     private void Start()
     {
+        buttonPressed_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
         StartCoroutine(DelayedStart());
 
         #region setup button listeners
@@ -212,7 +214,8 @@ public class PhoneMenu : MonoBehaviour
     /// <param name="next">The state to update to</param>
     private void UpdatePhoneState(PhoneState next)
     {
-        switch(next)
+        buttonPressed_sfx.start();
+        switch (next)
         {
             case PhoneState.CONTACTS:
                 // get current status information

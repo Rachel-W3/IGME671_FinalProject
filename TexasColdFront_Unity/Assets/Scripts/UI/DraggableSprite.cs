@@ -26,10 +26,14 @@ public class DraggableSprite : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     /**************/ private Rigidbody2D    thisRB;
     /**************/ private RectTransform  thisRT;
 
+    // Audio
+    private FMOD.Studio.EventInstance snowballGrabbing_sfx;
+
     public DraggableType Type => draggableType;
 
     private void Start()
     {
+        snowballGrabbing_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SnowballGrabbing");
         thisRB = GetComponent<Rigidbody2D>();
         thisImg = GetComponent<Image>();
         thisRT = GetComponent<RectTransform>();
@@ -46,6 +50,7 @@ public class DraggableSprite : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     public void OnPointerDown(PointerEventData _)
     {
+        snowballGrabbing_sfx.start();
         thisRB.isKinematic = true;
         thisRB.gravityScale = 0;
     }

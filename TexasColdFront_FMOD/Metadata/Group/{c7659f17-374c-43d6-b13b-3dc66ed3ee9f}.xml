@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{c7659f17-374c-43d6-b13b-3dc66ed3ee9f}">
+		<property name="name">
+			<value>SnowGathering-Minigame</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{99928da2-87c1-4c9e-9a1d-d4032c58667f}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{89a444d9-4d70-4061-84d8-b08581f5aea2}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{8fafc5ab-2c77-413a-8636-3774561af5e7}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{99928da2-87c1-4c9e-9a1d-d4032c58667f}">
+		<relationship name="effects">
+			<destination>{55119e55-c9c3-493a-9eb0-e1376764a1da}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{89a444d9-4d70-4061-84d8-b08581f5aea2}" />
+	<object class="MixerBusFader" id="{55119e55-c9c3-493a-9eb0-e1376764a1da}" />
+</objects>

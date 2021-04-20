@@ -21,7 +21,8 @@ public class SnowGathering : MonoBehaviour
     /**************/ private List<DraggableSprite>      spawnedDraggables;
 
     // Audio
-    private FMOD.Studio.EventInstance snowballGathering_sfx;
+    private FMOD.Studio.EventInstance snowballGeneration_sfx;
+    private FMOD.Studio.EventInstance dropSnowInBucket_sfx;
     
     /// <summary>
     /// Gets whether the bucket is full or not
@@ -49,11 +50,14 @@ public class SnowGathering : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        snowballGathering_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SnowballGathering");
+        // Init audio
+        snowballGeneration_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SnowballGeneration");
+        dropSnowInBucket_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/DropSnowInBucket");
+
         snowBtn.onClick.AddListener(() => {
+            snowballGeneration_sfx.start();
             if (spawnedDraggables.Count < 3)
             {
-                snowballGathering_sfx.start();
                 RectTransform parentTransform = snowDraggableTemplate.transform.parent.GetComponent<RectTransform>();
                 for (int i = 0; i < 3; i++)
                 {
@@ -97,6 +101,7 @@ public class SnowGathering : MonoBehaviour
     /// <param name="toRemove">The draggable to remove</param>
     public void RemoveSnowFromList(DraggableSprite toRemove)
     {
+        dropSnowInBucket_sfx.start();
         spawnedDraggables.Remove(toRemove);
         Destroy(toRemove.gameObject);
     }

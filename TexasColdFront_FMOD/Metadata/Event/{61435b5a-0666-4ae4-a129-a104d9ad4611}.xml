@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{61435b5a-0666-4ae4-a129-a104d9ad4611}">
 		<property name="name">
-			<value>SnowballGathering</value>
+			<value>SnowballGrabbing</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -53,7 +53,7 @@
 			<destination>{f0077d0b-5fd7-4026-9e03-ed6ad88db7f6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{8fafc5ab-2c77-413a-8636-3774561af5e7}</destination>
+			<destination>{c7659f17-374c-43d6-b13b-3dc66ed3ee9f}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{eb8977c8-1d38-4d08-bd8d-6f6b9a7bd38a}" />

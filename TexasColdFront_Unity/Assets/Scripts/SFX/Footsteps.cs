@@ -6,10 +6,10 @@ namespace tcf.controller
 {
     public class Footsteps : MonoBehaviour
     {
-        private FMOD.Studio.EventInstance footstep;
-        private CharacterController characterController;
-        private bool isPlayerMoving;
-        private float movingSpeed;
+        private FMOD.Studio.EventInstance      footstep;
+        private CharacterController            characterController;
+        private bool                           isPlayerMoving;
+        private float                          movingSpeed;
 
         float timer = 0.0f;
 

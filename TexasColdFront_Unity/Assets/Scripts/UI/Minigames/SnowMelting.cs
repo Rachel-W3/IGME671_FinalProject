@@ -106,6 +106,7 @@ public class SnowMelting : MonoBehaviour
     /// </summary>
     public void ResetMinigame()
     {
+        waterBoiling_sfx.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);  
         waterBoiling_sfx.setParameterByName("BucketState", 0);
         bucketBtn.interactable = false;
         timer = 0;

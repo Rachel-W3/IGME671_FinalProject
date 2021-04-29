@@ -58,17 +58,17 @@ public class SnowMelting : MonoBehaviour
                 switch(manager.BucketFillState)
                 {
                     case BucketState.SNOWY:
-                        waterBoiling_sfx.setParameterByName("BucketState", 0);
+                        waterBoiling_sfx.setParameterByName("BucketState", 1);
                         manager.BucketFillState = BucketState.WATER;
                         bucketImg.sprite = manager.GetBucketSprite(BucketState.WATER);
                         break;
                     case BucketState.WATER:
-                        waterBoiling_sfx.setParameterByName("BucketState", 1);
+                        waterBoiling_sfx.setParameterByName("BucketState", 2);
                         manager.BucketFillState = BucketState.BOILED;
                         bucketImg.sprite = manager.GetBucketSprite(BucketState.BOILED);
                         break;
                     case BucketState.BOILED:
-                        waterBoiling_sfx.setParameterByName("BucketState", 2);
+                        waterBoiling_sfx.setParameterByName("BucketState", 3);
                         manager.BucketFillState = BucketState.EMPTY;
                         bucketImg.sprite = manager.GetBucketSprite(BucketState.EMPTY);
                         break;

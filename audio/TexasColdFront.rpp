@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.23/win64" 1619684426
+<REAPER_PROJECT 0.1 "6.23/win64" 1619688515
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -15,8 +15,8 @@
   VIDEO_CONFIG 0 0 256
   PANMODE 3
   CURSOR 0
-  ZOOM 2126.3411595185039 0 0
-  VZOOMEX 8 2207
+  ZOOM 98.05041108803775 0 0
+  VZOOMEX 8 1707
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -58,8 +58,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 0.1881094495646
-  SELECTION2 0 0.1881094495646
+  SELECTION 0 9.4375
+  SELECTION2 0 9.4375
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -3570,11 +3570,11 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
+    MUTESOLO 0 2 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 1 1
-    BUSCOMP 1 0 0 0 0
+    BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
     SEL 0
@@ -3605,7 +3605,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3622,33 +3622,33 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 4.265625
+      LENGTH 2.265625
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.642527 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
       MUTE 0 0
       SEL 0
-      IGUID {5947089F-1C17-4F9F-B4EC-D031A62D04F2}
-      IID 128
+      IGUID {FDE4BACD-12E1-493B-B41E-4D532D25225D}
+      IID 252
       NAME 16121__incarnadine__simmering-pot.wav
       VOLPAN 1 0 1 -1
-      SOFFS 0
+      SOFFS 2
       PLAYRATE 1 1 -4 -1 0 0.0025
       CHANMODE 0
-      GUID {3B1FF778-F1BC-4E6D-959D-611922EC1398}
+      GUID {6D61D7C5-F443-432E-9866-AE126ACDEF97}
       <SOURCE WAVE
         FILE "samples\16121__incarnadine__simmering-pot.wav"
       >
     >
     <ITEM
-      POSITION 4.265625
+      POSITION 2.265625
       SNAPOFFS 0
       LENGTH 0.40625
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
       MUTE 0 0
       SEL 0
       IGUID {63F25596-B646-481B-A681-25D2F04C2509}
@@ -3664,13 +3664,13 @@
       >
     >
     <ITEM
-      POSITION 4.671875
+      POSITION 2.671875
       SNAPOFFS 0
       LENGTH 5.328125
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.644624 0 1 0 0 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1.1 0.644624 0.71875 1 1 0 0
       MUTE 0 0
       SEL 0
       IGUID {48D8549F-1277-491C-8AF1-A82663638AF9}
@@ -3685,6 +3685,28 @@
         FILE "samples\16121__incarnadine__simmering-pot.wav"
       >
     >
+    <ITEM
+      POSITION 7.28125
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.642527 0.71875 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5947089F-1C17-4F9F-B4EC-D031A62D04F2}
+      IID 128
+      NAME 16121__incarnadine__simmering-pot.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 -4 -1 0 0.0025
+      CHANMODE 0
+      GUID {3B1FF778-F1BC-4E6D-959D-611922EC1398}
+      <SOURCE WAVE
+        FILE "samples\16121__incarnadine__simmering-pot.wav"
+      >
+    >
   >
   <TRACK {E3196006-40E7-4EE7-93CA-61C303B09BD7}
     NAME "Gas hissing"
@@ -3692,17 +3714,17 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
+    MUTESOLO 0 2 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 2 -1
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 0
+    SEL 1
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3713,35 +3735,35 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 4.265625
+      LENGTH 2.265625
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.091432 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
       MUTE 0 0
-      SEL 0
-      IGUID {19A0F3A2-366C-4CD8-A1D9-C411023143AD}
-      IID 127
+      SEL 1
+      IGUID {59A11381-E43D-48FD-A9C6-903440664565}
+      IID 254
       NAME 277360__beerbelly38__file0571-air-hiss-weak.wav
       VOLPAN 1 0 1 -1
-      SOFFS 0
+      SOFFS 2
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {F107FD40-079C-4352-B6DC-0B82A3D0465F}
+      GUID {6793FACD-53C1-43F4-971E-A77F9E28FA68}
       <SOURCE WAVE
         FILE "samples\277360__beerbelly38__file0571-air-hiss-weak.wav"
       >
     >
     <ITEM
-      POSITION 4.265625
+      POSITION 2.265625
       SNAPOFFS 0
       LENGTH 0.40625
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0 0
-      FADEOUT 1 0.01 0 1 0 0 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
       MUTE 0 0
-      SEL 0
+      SEL 1
       IGUID {45F16B3E-EDB0-4AFB-9396-D3B2DFEC9432}
       IID 231
       NAME 277360__beerbelly38__file0571-air-hiss-weak.wav
@@ -3755,15 +3777,15 @@
       >
     >
     <ITEM
-      POSITION 4.671875
+      POSITION 2.671875
       SNAPOFFS 0
       LENGTH 3.53928146258503
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0 0
+      FADEIN 1 0 0 1 0 0 0
       FADEOUT 1.1 0.01 0.836156 1 1 0 0
       MUTE 0 0
-      SEL 0
+      SEL 1
       IGUID {54F9EA34-E1A7-4A98-BAD8-8A5C5F41D621}
       IID 244
       NAME 277360__beerbelly38__file0571-air-hiss-weak.wav
@@ -3777,15 +3799,15 @@
       >
     >
     <ITEM
-      POSITION 7.375
+      POSITION 5.375
       SNAPOFFS 0
       LENGTH 2.6875
       LOOP 1
       ALLTAKES 0
       FADEIN 1.1 0.01 0.836156 1 1 0 0
-      FADEOUT 1 0.82836 0 1 0 0 0
+      FADEOUT 1.1 0.82836 0.625 1 1 0 0
       MUTE 0 0
-      SEL 0
+      SEL 1
       IGUID {85135ED3-229D-44AB-948C-29AF5A3983D7}
       IID 131
       NAME 277360__beerbelly38__file0571-air-hiss-weak.wav
@@ -3794,6 +3816,28 @@
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {4399433D-362B-40A9-B817-CE3EE5B4A026}
+      <SOURCE WAVE
+        FILE "samples\277360__beerbelly38__file0571-air-hiss-weak.wav"
+      >
+    >
+    <ITEM
+      POSITION 7.4375
+      SNAPOFFS 0
+      LENGTH 2
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.091432 0.625 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {19A0F3A2-366C-4CD8-A1D9-C411023143AD}
+      IID 127
+      NAME 277360__beerbelly38__file0571-air-hiss-weak.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F107FD40-079C-4352-B6DC-0B82A3D0465F}
       <SOURCE WAVE
         FILE "samples\277360__beerbelly38__file0571-air-hiss-weak.wav"
       >
@@ -4541,15 +4585,15 @@
   >
   <TRACK {65CE06D1-9EDC-403F-836D-30A30EB14E77}
     NAME PhoneTapping_sfx
-    PEAKCOL 16576
+    PEAKCOL 22535626
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 1 1
-    BUSCOMP 0 0 0 0 0
+    BUSCOMP 1 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
     SEL 0
@@ -4566,7 +4610,7 @@
   >
   <TRACK {1D07864F-D78E-4DA3-9308-A84DD0AA4FB3}
     NAME "Unedited source"
-    PEAKCOL 16576
+    PEAKCOL 22535626
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -4580,7 +4624,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 0 0 0 0 0
+    TRACKHEIGHT 0 1 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4657,21 +4701,21 @@
   >
   <TRACK {49B07483-6FE9-42CA-AC1D-E48620F86D8A}
     NAME PhoneTapping_sfx
-    PEAKCOL 16576
+    PEAKCOL 22535626
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 2 0
+    MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 2 -1
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 112 0 0 0 0 0
+    TRACKHEIGHT 112 1 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4688,7 +4732,7 @@
       FADEIN 1 0.002724 0 1 0 0 0
       FADEOUT 1 0.005959 0 1 0 0 0
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {08D335E3-50EA-430A-BC51-60F736849845}
       IID 249
       NAME 469297__djf54__phonetaps.wav

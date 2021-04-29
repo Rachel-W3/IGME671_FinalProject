@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{6b388d19-2cbe-48e1-8662-4f0973b5d1ac}">
+		<property name="assetPath">
+			<value>Simmering.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.2812471655328803</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f395d3cc-5727-4d88-914f-80dcb0905851}</destination>
+		</relationship>
+	</object>
+</objects>

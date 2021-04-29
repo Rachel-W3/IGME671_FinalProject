@@ -40,7 +40,6 @@ public class SnowMelting : MonoBehaviour
     {
         waterBoiling_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/WaterBoiling");
         waterSplashing_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/WaterSplashingInBucket");
-        waterBoiling_sfx.setParameterByName("BucketState", 0);
         bucketBtn.onClick.AddListener(() => {
             ToggleBucket(!BucketPlaced);
         });
@@ -107,6 +106,7 @@ public class SnowMelting : MonoBehaviour
     /// </summary>
     public void ResetMinigame()
     {
+        waterBoiling_sfx.setParameterByName("BucketState", 0);
         bucketBtn.interactable = false;
         timer = 0;
         bucketImg.color = Color.white;

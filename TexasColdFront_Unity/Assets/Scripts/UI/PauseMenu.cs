@@ -18,18 +18,24 @@ public class PauseMenu : MonoBehaviour
 #pragma warning restore 0649
     /**************/ private IEnumerator        transitionContainerInstance;
 
-    // Audio
-    private FMOD.Studio.EventInstance buttonPressed_SFX;
-    private FMOD.Studio.EventInstance menu_buttonPressed_SFX;
+    // ********************** Audio ******************************************
+    private FMOD.Studio.EventInstance           buttonPressed_SFX;
+    private FMOD.Studio.EventInstance           menu_buttonPressed_SFX;
+    private FMOD.Studio.EventInstance           ambienceMuffler_snapshot;
+
+    private void Awake()
+    {
+        buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
+        menu_buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/Menu_ButtonPressed");
+        ambienceMuffler_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Ambience Muffler");
+        ambienceMuffler_snapshot.start();
+    }
 
     /// <summary>
     /// setup ui on unity start
     /// </summary>
     private void Start()
     {
-        buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
-        menu_buttonPressed_SFX = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/Menu_ButtonPressed");
-
         // Play button should set game state to GAME
         buttonResume.onClick.AddListener(() =>
         {
@@ -108,13 +114,20 @@ public class PauseMenu : MonoBehaviour
             containerMenu.alpha = state ?
                 Mathf.Lerp(0, 1, transitionContainerState.animationCurve.Evaluate(t / transitionContainerState.animationLength)) :
                 Mathf.Lerp(1, 0, transitionContainerState.animationCurve.Evaluate(t / transitionContainerState.animationLength));
+            ambienceMuffler_snapshot.setParameterByName("MufflerActive", containerMenu.alpha); // Intensity of muffler lerps with alpha
         }
 
         // ensure alpha is fully set (b/c of dt animation may not perfectly set to 1) if active, or deactivate in hierarchy if inactive
         if (state)
+        {
+            ambienceMuffler_snapshot.setParameterByName("MufflerActive", 1.0f);
             containerMenu.alpha = 1;
+        }
         else
+        {
+            ambienceMuffler_snapshot.setParameterByName("MufflerActive", 0.0f);
             containerMenu.gameObject.SetActive(false);
+        }
     }
 }
 

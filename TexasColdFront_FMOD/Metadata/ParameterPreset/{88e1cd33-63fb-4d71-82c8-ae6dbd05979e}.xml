@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{88e1cd33-63fb-4d71-82c8-ae6dbd05979e}">
+		<property name="name">
+			<value>MufflerActive</value>
+		</property>
+		<relationship name="folder">
+			<destination>{cf05457f-51cf-458e-9c17-0174a20c06dc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{40866616-73a6-4a13-91c4-edbc8bd6e552}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{40866616-73a6-4a13-91c4-edbc8bd6e552}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

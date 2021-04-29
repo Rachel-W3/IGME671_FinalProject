@@ -8,12 +8,6 @@ namespace tcf.ui
     {
         [SerializeField] private GameObject                       fireSprite;
         /**************/ private FMODUnity.StudioEventEmitter     fireCrackling_emitter;
-        /**************/ private FMOD.Studio.EventInstance        fireCrackling_Ambience;
-
-        private void Awake()
-        {
-            //fireCrackling_Ambience = FMODUnity.RuntimeManager.CreateInstance("event:/Ambience/FireCrackling");
-        }
 
         // Start is called before the first frame update
         void Start()
@@ -34,7 +28,6 @@ namespace tcf.ui
                 fireSprite.SetActive(true);
             else
                 fireSprite.SetActive(false);
-            //fireCrackling_Ambience.setParameterByName("fuelLevel", Resources.Instance.FuelAmount);
             fireCrackling_emitter.SetParameter("fuelLevel", Resources.Instance.FuelAmount);
         }
     }

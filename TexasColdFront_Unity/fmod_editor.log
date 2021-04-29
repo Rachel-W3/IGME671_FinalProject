@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001D4EEC60EE8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001D4EEC61B78 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,50 +17,72 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = ../TexasColdFront_FMOD/Build/Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001D4F26753C8 : node = 000001D4F1DC93F0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001D447CB37A8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001D4F26753C8
+[LOG] SystemI::createSoundInternal             :     Create name='../TexasColdFront_FMOD/Build/Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2167392
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 23520
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001D4F1DC9500
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='FireCrackling_Ambience', format=5, channels=2, frequency=48000, lengthbytes=665536, lengthpcm=2366072, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.307987.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001D4F26753C8
+[LOG] SoundI::release                          : 217186__bosk1__wind-at-door-howling-4 (000001D4F0DAC6F8)
+[LOG] SoundI::release                          :     217186__bosk1__wind-at-door-howling-4 (000001D511A04E18)
+[LOG] SoundI::release                          :     217186__bosk1__wind-at-door-howling-4 (000001D50EE006A8)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          : 217186__bosk1__wind-at-door-howling-4 (000001D50EE00D68)
-[LOG] SoundI::release                          :     217186__bosk1__wind-at-door-howling-4 (000001D50E715D18)
-[LOG] SoundI::release                          :     217186__bosk1__wind-at-door-howling-4 (000001D50EE035E8)
-[LOG] SoundI::release                          :  (000001D512413E78)
-[LOG] SoundI::release                          :     ButtonPressed_sfx (000001D4A7655E48)
-[LOG] SoundI::release                          :  (000001D512411D68)
-[LOG] SoundI::release                          :     tile-footstep-1 (000001D50E496B28)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : FireCrackling_Ambience (000001D4F26753C8)
+[LOG] SoundI::release                          :     FireCrackling_Ambience (000001D511A05158)
+[LOG] SoundI::release                          :     FireCrackling_Ambience (000001D50EE02868)
+[LOG] SoundI::release                          :  (000001D4F4FD6018)
+[LOG] SoundI::release                          :     ButtonPressed_sfx (000001D4F39C6DB8)
 [LOG] SoundI::release                          :  (000001D512412778)
-[LOG] SoundI::release                          :     tile-footstep-2 (000001D4AA82F7F8)
-[LOG] SoundI::release                          :  (000001D512411358)
-[LOG] SoundI::release                          :     tile-footstep-3 (000001D50E717238)
-[LOG] SoundI::release                          :  (000001D5124121B8)
-[LOG] SoundI::release                          :     DropSnowInBucket_sfx (000001D4A99A1268)
+[LOG] SoundI::release                          :     tile-footstep-1 (000001D4F2F95E68)
+[LOG] SoundI::release                          :  (000001D5124135D8)
+[LOG] SoundI::release                          :     tile-footstep-2 (000001D4F2F954A8)
+[LOG] SoundI::release                          :  (000001D4F4FD6D08)
+[LOG] SoundI::release                          :     tile-footstep-3 (000001D4483205B8)
+[LOG] SoundI::release                          :  (000001D512411A88)
+[LOG] SoundI::release                          :     ButtonPressed_sfx(ver2) (000001D4F2F95B28)
+[LOG] SoundI::release                          :  (000001D4A90532F8)
+[LOG] SoundI::release                          :     DropSnowInBucket_sfx (000001D4F2F957E8)
+[LOG] SoundI::release                          :  (000001D4F4FD6A28)
+[LOG] SoundI::release                          :     WaterSplashInBucket_sfx (000001D4F39C6C18)
 [LOG] SoundI::release                          :  (000001D512413188)
-[LOG] SoundI::release                          :     ButtonPressed_sfx(ver2) (000001D4AA82FB38)
-[LOG] SoundI::release                          :  (000001D5124111E8)
-[LOG] SoundI::release                          :     WaterSplashInBucket_sfx (000001D50E716058)
-[LOG] SoundI::release                          :  (000001D5124142C8)
-[LOG] SoundI::release                          :     WaterBoiling_sfx (000001D4AA82DDF8)
-[LOG] SoundI::release                          :  (000001D512413FE8)
-[LOG] SoundI::release                          :     SnowballGeneration_sfx (000001D4A7654AC8)
-[LOG] SoundI::release                          :  (000001D512414B68)
-[LOG] SoundI::release                          :     FurnitureDestroyed_sfx (000001D5119FC108)
-[LOG] SoundI::release                          :  (000001D5124132F8)
-[LOG] SoundI::release                          :     throw-wood-1 (000001D50E495E28)
-[LOG] SoundI::release                          :  (000001D512412D38)
-[LOG] SoundI::release                          :     throw-wood-2 (000001D448655AF8)
-[LOG] SoundI::release                          :  (000001D512414438)
-[LOG] SoundI::release                          :     throw-wood-3 (000001D4A873A5A8)
-[LOG] SoundI::release                          :  (000001D512412A58)
-[LOG] SoundI::release                          :     MetalBucketRattle_sfx (000001D50E4967E8)
-[LOG] SoundI::release                          :  (000001D512413468)
-[LOG] SoundI::release                          :     SnowCrunching_sfx (000001D448655C98)
+[LOG] SoundI::release                          :     WaterBoiling_sfx (000001D4A794C918)
+[LOG] SoundI::release                          :  (000001D4F4FD65D8)
+[LOG] SoundI::release                          :     SnowballGeneration_sfx (000001D4F39C6F58)
+[LOG] SoundI::release                          :  (000001D4F4FD6468)
+[LOG] SoundI::release                          :     FurnitureDestroyed_sfx (000001D4F39C7298)
+[LOG] SoundI::release                          :  (000001D512411ED8)
+[LOG] SoundI::release                          :     throw-wood-1 (000001D4F2F95168)
+[LOG] SoundI::release                          :  (000001D5124128E8)
+[LOG] SoundI::release                          :     throw-wood-2 (000001D4F2F95988)
+[LOG] SoundI::release                          :  (000001D4F4FD62F8)
+[LOG] SoundI::release                          :     throw-wood-3 (000001D4F39C70F8)
 [LOG] SoundI::release                          :  (000001D512414CD8)
-[LOG] SoundI::release                          :     FurnitureHit_sfx (000001D50E716EF8)
-[LOG] SoundI::release                          :  (000001D512413D08)
-[LOG] SoundI::release                          :     furniture-gathering-1 (000001D4A99A0BE8)
-[LOG] SoundI::release                          :  (000001D5124117A8)
-[LOG] SoundI::release                          :     furniture-gathering-2 (000001D4A873A408)
-[LOG] SoundI::release                          :  (000001D5124145A8)
-[LOG] SoundI::release                          :     furniture-gathering-3 (000001D5119FC928)
-[LOG] SoundI::release                          :  (000001D512413748)
-[LOG] SoundI::release                          :     StartStove_sfx (000001D448655E38)
+[LOG] SoundI::release                          :     MetalBucketRattle_sfx (000001D4F2F95CC8)
+[LOG] SoundI::release                          :  (000001D511C15C18)
+[LOG] SoundI::release                          :     SnowCrunching_sfx (000001D4F2F95308)
+[LOG] SoundI::release                          :  (000001D4F4FD68B8)
+[LOG] SoundI::release                          :     FurnitureHit_sfx (000001D4F39C6598)
+[LOG] SoundI::release                          :  (000001D4F4FD6748)
+[LOG] SoundI::release                          :     furniture-gathering-1 (000001D4F39C6738)
+[LOG] SoundI::release                          :  (000001D4F4FD6188)
+[LOG] SoundI::release                          :     furniture-gathering-2 (000001D4F39C6A78)
+[LOG] SoundI::release                          :  (000001D4F4FD6B98)
+[LOG] SoundI::release                          :     furniture-gathering-3 (000001D4F39C68D8)
+[LOG] SoundI::release                          :  (000001D4A9053188)
+[LOG] SoundI::release                          :     StartStove_sfx (000001D4F2F95648)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -71,19 +93,3 @@
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.

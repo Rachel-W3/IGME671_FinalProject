@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{e17e5d3d-01aa-4cf9-b4c9-4fae50f07141}">
+		<property name="assetPath">
+			<value>PhoneTapping_sfx.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.18811791383219956</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f395d3cc-5727-4d88-914f-80dcb0905851}</destination>
+		</relationship>
+	</object>
+</objects>

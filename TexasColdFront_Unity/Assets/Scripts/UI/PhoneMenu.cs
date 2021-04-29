@@ -110,7 +110,7 @@ public class PhoneMenu : MonoBehaviour
 
     private void Awake()
     {
-        phoneTapped_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
+        phoneTapped_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/PhoneTapped");
         togglePhone_sfx   = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/PhoneToggling");
     }
 

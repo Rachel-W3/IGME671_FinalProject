@@ -105,14 +105,20 @@ public class PhoneMenu : MonoBehaviour
     /**************/ private const string                       statusFine      = "<color=#ff9>Fine</color>";
     /**************/ private const string                       statusHead      = "Status: ";
     /**************/ private const string                       statusSick      = "<color=#9f9>Sick</color>\n";
-    /**************/ private FMOD.Studio.EventInstance          buttonPressed_sfx;
+    /**************/ private FMOD.Studio.EventInstance          phoneTapped_sfx;
+    /**************/ private FMOD.Studio.EventInstance          togglePhone_sfx;
+
+    private void Awake()
+    {
+        phoneTapped_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
+        togglePhone_sfx   = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/PhoneToggling");
+    }
 
     /// <summary>
     /// disable container and setup ui on start
     /// </summary>
     private void Start()
     {
-        buttonPressed_sfx = FMODUnity.RuntimeManager.CreateInstance("event:/Interface/InGame_ButtonPressed");
         StartCoroutine(DelayedStart());
 
         #region setup button listeners
@@ -190,20 +196,24 @@ public class PhoneMenu : MonoBehaviour
         switch (next)
         {
             case GameState.PHONE:
+                togglePhone_sfx.setParameterByName("TogglePhone", 0); // Play unlock phone sfx
                 UpdatePhoneState(PhoneState.HOME);
                 timeIndicator.text = "Day " + TimeTracker.Instance.DaysElapsed + "   " + 
                                      string.Format("{0:00}:{1:00}", TimeTracker.Instance.Hour, TimeTracker.Instance.Minute);
                 transitionContainerInstance = TransitionContainer(true);
                 StartCoroutine(transitionContainerInstance);
+                togglePhone_sfx.start();
                 break;
             default:
-            if (prev == GameState.PHONE) 
-            {
-                transitionContainerInstance = TransitionContainer(false);
-                StartCoroutine(transitionContainerInstance);
-            }
-            else if (containerPrimary.gameObject.activeInHierarchy)
-                containerPrimary.gameObject.SetActive(false);
+                if (prev == GameState.PHONE) 
+                {
+                    togglePhone_sfx.setParameterByName("TogglePhone", 1); // Play lock phone sfx
+                    transitionContainerInstance = TransitionContainer(false);
+                    StartCoroutine(transitionContainerInstance);
+                    togglePhone_sfx.start();
+                }
+                else if (containerPrimary.gameObject.activeInHierarchy)
+                    containerPrimary.gameObject.SetActive(false);
                 break;
         }
     }
@@ -214,7 +224,7 @@ public class PhoneMenu : MonoBehaviour
     /// <param name="next">The state to update to</param>
     private void UpdatePhoneState(PhoneState next)
     {
-        buttonPressed_sfx.start();
+        phoneTapped_sfx.start();
         switch (next)
         {
             case PhoneState.CONTACTS:
@@ -411,9 +421,13 @@ public class PhoneMenu : MonoBehaviour
 
         // ensure alpha is fully set (b/c of dt animation may not perfectly set to 1) if active, or deactivate in hierarchy if inactive
         if (state)
+        {
             containerPrimary.anchoredPosition = posUp;
+        }
         else
+        {
             containerPrimary.gameObject.SetActive(false);
+        }
     }
 }
 

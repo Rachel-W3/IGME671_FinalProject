@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{059214d3-f049-44e6-9519-22414000f2c0}">
+		<property name="name">
+			<value>TogglePhone</value>
+		</property>
+		<relationship name="folder">
+			<destination>{cf05457f-51cf-458e-9c17-0174a20c06dc}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{be37ef50-dd0f-4cdc-9310-06b2d6ebf588}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{be37ef50-dd0f-4cdc-9310-06b2d6ebf588}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Unlock</value>
+			<value>Lock</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

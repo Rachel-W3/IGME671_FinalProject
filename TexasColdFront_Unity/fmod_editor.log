@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001D4EEC5DCA8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000014893224498 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,85 +16,58 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 2266944
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 27680
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000357069F478
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAE3867B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAE3867AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAE3867BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAE3867CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001D447D18338
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='SnowballGathering_sfx', format=5, channels=2, frequency=48000, lengthbytes=2112, lengthpcm=11947, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.098239.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          :  (000001D4F38CEC48)
-[LOG] SoundI::release                          :     WaterSplashInBucket_sfx (000001D4F1FA92F8)
-[LOG] SoundI::release                          :  (000001D512412608)
-[LOG] SoundI::release                          :     SnowballGathering_sfx (000001D4A999D988)
-[LOG] SoundI::release                          :  (000001D4F38CF098)
-[LOG] SoundI::release                          :     Gas hissing (000001D4F1FAB518)
-[LOG] SoundI::release                          : 217186__bosk1__wind-at-door-howling-4 (000001D4F6A88E08)
-[LOG] SoundI::release                          :     217186__bosk1__wind-at-door-howling-4 (000001D4A999AC08)
-[LOG] SoundI::release                          :     217186__bosk1__wind-at-door-howling-4 (000001D50EE015D8)
-[LOG] SoundI::release                          :  (000001D4F7709B48)
-[LOG] SoundI::release                          :     Simmering (000001D4F6919108)
-[LOG] SoundI::release                          :  (000001D4A9678BF8)
-[LOG] SoundI::release                          :     FurnitureHit_sfx (000001D4F1FA8798)
-[LOG] SoundI::release                          :  (000001D4A9678D68)
-[LOG] SoundI::release                          :     PhoneLock_sfx (000001D4F1FAB858)
-[LOG] SoundI::release                          :  (000001D4F38CE7F8)
-[LOG] SoundI::release                          :     PhoneUnlock_sfx (000001D4F1FAB9F8)
-[LOG] SoundI::release                          :  (000001D4F77099D8)
-[LOG] SoundI::release                          :     StartStove_sfx (000001D4F1FA8AD8)
-[LOG] SoundI::release                          :  (000001D4A96791B8)
-[LOG] SoundI::release                          :     ButtonPressed_sfx (000001D4F1FA9FF8)
-[LOG] SoundI::release                          :  (000001D4F77092A8)
-[LOG] SoundI::release                          :     tile-footstep-1 (000001D4F6917568)
-[LOG] SoundI::release                          :  (000001D4F7708FC8)
-[LOG] SoundI::release                          :     tile-footstep-2 (000001D4F6918748)
-[LOG] SoundI::release                          :  (000001D4F38CF378)
-[LOG] SoundI::release                          :     tile-footstep-3 (000001D4F1FAB6B8)
-[LOG] SoundI::release                          :  (000001D4F7708E58)
-[LOG] SoundI::release                          :     ButtonPressed_sfx(ver2) (000001D4F69188E8)
-[LOG] SoundI::release                          :  (000001D4A9678ED8)
-[LOG] SoundI::release                          :     DropSnowInBucket_sfx (000001D4F1FA9E58)
-[LOG] SoundI::release                          :  (000001D4A96787A8)
-[LOG] SoundI::release                          :     SnowballGeneration_sfx (000001D4F1FABB98)
-[LOG] SoundI::release                          :  (000001D4A9678A88)
-[LOG] SoundI::release                          :     FurnitureDestroyed_sfx (000001D4F1FA9498)
-[LOG] SoundI::release                          :  (000001D4F7709868)
-[LOG] SoundI::release                          :     throw-wood-1 (000001D4F6918F68)
-[LOG] SoundI::release                          :  (000001D4F7709418)
-[LOG] SoundI::release                          :     throw-wood-2 (000001D4F1FA9158)
-[LOG] SoundI::release                          :  (000001D4A9678638)
-[LOG] SoundI::release                          :     throw-wood-3 (000001D4F1FAB1D8)
-[LOG] SoundI::release                          :  (000001D4F7709138)
-[LOG] SoundI::release                          :     MetalBucketRattle_sfx (000001D4F69192A8)
-[LOG] SoundI::release                          :  (000001D4F7709588)
-[LOG] SoundI::release                          :     SnowCrunching_sfx (000001D4F1FAAE98)
-[LOG] SoundI::release                          :  (000001D4F77096F8)
-[LOG] SoundI::release                          :     PhoneTapping_sfx (000001D4F1FAA338)
-[LOG] SoundI::release                          :  (000001D4A9679048)
-[LOG] SoundI::release                          :     furniture-gathering-1 (000001D4F1FA8C78)
-[LOG] SoundI::release                          :  (000001D4A96784C8)
-[LOG] SoundI::release                          :     furniture-gathering-2 (000001D4F1FAB378)
-[LOG] SoundI::release                          :  (000001D4A9678918)
-[LOG] SoundI::release                          :     furniture-gathering-3 (000001D4F1FAA9B8)
+[LOG] SoundI::release                          :  (000001482A24E538)
+[LOG] SoundI::release                          :     WaterSplashInBucket_sfx (0000014827D37908)
+[LOG] SoundI::release                          :  (000001488DC1AC88)
+[LOG] SoundI::release                          :     Gas hissing (0000014827D37AA8)
+[LOG] SoundI::release                          : HowlingWinds_Ambience (000001489358E928)
+[LOG] SoundI::release                          :     HowlingWinds_Ambience (0000014827D382C8)
+[LOG] SoundI::release                          :     HowlingWinds_Ambience (000001489358FA08)
+[LOG] SoundI::release                          :  (0000014829A39158)
+[LOG] SoundI::release                          :     Simmering (0000014827D36C08)
+[LOG] SoundI::release                          :  (000001482A24F398)
+[LOG] SoundI::release                          :     FurnitureHit_sfx (0000014827D37768)
+[LOG] SoundI::release                          :  (000001489300ABE8)
+[LOG] SoundI::release                          :     PhoneLock_sfx (0000014827D3B048)
+[LOG] SoundI::release                          :  (0000014828F58D78)
+[LOG] SoundI::release                          :     PhoneUnlock_sfx (0000014827D37F88)
+[LOG] SoundI::release                          :  (0000014893009EF8)
+[LOG] SoundI::release                          :     StartStove_sfx (0000014827D35A28)
+[LOG] SoundI::release                          :  (000001488DC1D7A8)
+[LOG] SoundI::release                          :     ButtonPressed_sfx (0000014827D38128)
+[LOG] SoundI::release                          :  (0000014829A3A578)
+[LOG] SoundI::release                          :     tile-footstep-1 (0000014827D356E8)
+[LOG] SoundI::release                          :  (0000014829A37D38)
+[LOG] SoundI::release                          :     tile-footstep-2 (0000014827D38E28)
+[LOG] SoundI::release                          :  (0000014828F5B2D8)
+[LOG] SoundI::release                          :     tile-footstep-3 (0000014827D39308)
+[LOG] SoundI::release                          :  (0000014829A3B0F8)
+[LOG] SoundI::release                          :     ButtonPressed_sfx(ver2) (0000014827D35F08)
+[LOG] SoundI::release                          :  (000001489300A068)
+[LOG] SoundI::release                          :     DropSnowInBucket_sfx (0000014827D3AEA8)
+[LOG] SoundI::release                          :  (000001488DC1DED8)
+[LOG] SoundI::release                          :     SnowballGeneration_sfx (0000014827D35D68)
+[LOG] SoundI::release                          :  (0000014829A395A8)
+[LOG] SoundI::release                          :     FurnitureDestroyed_sfx (0000014827D36248)
+[LOG] SoundI::release                          :  (0000014829A38B98)
+[LOG] SoundI::release                          :     throw-wood-1 (0000014827D3A9C8)
+[LOG] SoundI::release                          :  (000001489300AA78)
+[LOG] SoundI::release                          :     throw-wood-2 (0000014827D36DA8)
+[LOG] SoundI::release                          :  (0000014829A37A58)
+[LOG] SoundI::release                          :     throw-wood-3 (0000014827D38C88)
+[LOG] SoundI::release                          :  (0000014829A39438)
+[LOG] SoundI::release                          :     MetalBucketRattle_sfx (0000014827D3AD08)
+[LOG] SoundI::release                          :  (000001489300B5F8)
+[LOG] SoundI::release                          :     SnowCrunching_sfx (0000014827D35548)
+[LOG] SoundI::release                          :  (0000014893009D88)
+[LOG] SoundI::release                          :     PhoneTapping_sfx (0000014827D37288)
+[LOG] SoundI::release                          :  (000001489300B318)
+[LOG] SoundI::release                          :     furniture-gathering-1 (0000014827D35BC8)
+[LOG] SoundI::release                          :  (000001488DC1A278)
+[LOG] SoundI::release                          :     furniture-gathering-2 (0000014827D37428)
+[LOG] SoundI::release                          :  (0000014829A38018)
+[LOG] SoundI::release                          :     furniture-gathering-3 (0000014827D360A8)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -112,12 +85,3 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.

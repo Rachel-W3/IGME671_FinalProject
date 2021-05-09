@@ -54,7 +54,7 @@
 			<destination>{245b956e-0df1-4d62-9344-af197bb97ce6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{8fafc5ab-2c77-413a-8636-3774561af5e7}</destination>
+			<destination>{f35c429a-1f1d-480d-a749-30ca549ffa83}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{f8f43512-dae2-4199-ad9c-aad900e21387}" />
@@ -102,7 +102,6 @@
 		<property name="maximumTimeDelay">
 			<value>20</value>
 		</property>
-		<property name="name" />
 		<property name="volume">
 			<value>-10.5</value>
 		</property>

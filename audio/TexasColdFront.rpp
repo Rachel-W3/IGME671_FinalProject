@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "6.23/win64" 1620455813
+<REAPER_PROJECT 0.1 "6.23/win64" 1620539084
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -14,9 +14,9 @@
   TIMEMODE 0 5 -1 30 0 0 -1
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 93.5
-  ZOOM 8.9576804251502 0 0
-  VZOOMEX 8 2163
+  CURSOR 3.0625
+  ZOOM 35.160489271941 0 0
+  VZOOMEX 8 2263
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -58,8 +58,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 98.16383469039278
-  SELECTION2 0 98.16383469039278
+  SELECTION 0 16.20656820733117
+  SELECTION2 0 16.20656820733117
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -129,7 +129,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -264,7 +264,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 103 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -402,7 +402,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -521,7 +521,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -766,7 +766,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -901,7 +901,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 100 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -989,7 +989,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1256,7 +1256,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1281,7 +1281,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1344,7 +1344,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1438,7 +1438,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1595,7 +1595,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 101 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -1808,7 +1808,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2009,7 +2009,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 128 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2212,7 +2212,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2309,7 +2309,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 125 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2576,7 +2576,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2601,7 +2601,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 94 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2648,7 +2648,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 96 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2720,7 +2720,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 80 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -2987,7 +2987,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 84 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3034,7 +3034,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 73 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3081,7 +3081,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 81 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3128,7 +3128,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3153,7 +3153,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 89 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3200,7 +3200,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 94 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3272,7 +3272,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3429,7 +3429,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3454,7 +3454,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3517,7 +3517,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3605,7 +3605,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3724,7 +3724,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3884,7 +3884,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 89 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -3931,7 +3931,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4003,7 +4003,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4138,7 +4138,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 107 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4368,7 +4368,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 110 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4624,7 +4624,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 0 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4715,7 +4715,7 @@
     SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
-    TRACKHEIGHT 112 1 0 0 0 0
+    TRACKHEIGHT 0 0 0 0 0 0
     INQ 0 0 0 0.5 100 0 0 100
     NCHAN 2
     FX 1
@@ -4747,8 +4747,8 @@
     >
   >
   <TRACK {510B655F-157C-42D8-BACC-920230FFDDB5}
-    NAME HowlingWinds_Ambience
-    PEAKCOL 16576
+    NAME "Outdoor Sounds"
+    PEAKCOL 25231232
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -4756,10 +4756,10 @@
     IPHASE 0
     PLAYOFFS 0 1
     ISBUS 1 1
-    BUSCOMP 0 0 0 0 0
+    BUSCOMP 1 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 1 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0
@@ -4767,6 +4767,31 @@
     NCHAN 2
     FX 1
     TRACKID {510B655F-157C-42D8-BACC-920230FFDDB5}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {12E4A097-DBC4-45BC-890D-7095261B5B6D}
+    NAME HowlingWinds_Ambience
+    PEAKCOL 25231232
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {12E4A097-DBC4-45BC-890D-7095261B5B6D}
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
@@ -4779,7 +4804,7 @@
       FADEIN 1 0 0 1 0 0 0
       FADEOUT 1.1 0.01 7.689228 1 1 0 0
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {19A43186-8CC7-4923-A3CC-774BE562CAEB}
       IID 355
       NAME 217186__bosk1__wind-at-door-howling-4.wav
@@ -4801,7 +4826,7 @@
       FADEIN 1.1 0.01 7.689228 1 1 0 0
       FADEOUT 1 0 0 1 0 0 0
       MUTE 0 0
-      SEL 1
+      SEL 0
       IGUID {34BA1AF7-21CA-42B8-9723-D8AA27E8DEDD}
       IID 351
       NAME 217186__bosk1__wind-at-door-howling-4.wav
@@ -4812,6 +4837,179 @@
       GUID {4B0FCFBB-34CC-42C0-B8B3-C12DBE1F249D}
       <SOURCE WAVE
         FILE "samples\217186__bosk1__wind-at-door-howling-4.wav"
+      >
+    >
+  >
+  <TRACK {DC064234-5B12-487A-BB94-B72EE38CE362}
+    NAME RustlingLeaves_Ambience
+    PEAKCOL 25231232
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 2 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 1 1
+    BUSCOMP 2 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 1
+    REC 0 0 1 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 1 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {DC064234-5B12-487A-BB94-B72EE38CE362}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 725 141 754 466
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.dll 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAqAAAAAEAAAAAABAA
+        IQAAAAQAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAANHdWawwHa5AgO21oPfGsD4AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAAAA8CAABhAQAA
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {598BEFB9-4608-4238-B74E-E6FFA787BDAB}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 1.38244503146728
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1.1 1.037569 0.319945 1 1 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {54EBBD18-506F-4504-9EBF-6230DF9B25DD}
+      IID 361
+      NAME 491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav
+      VOLPAN 1 0 2.508953 -1
+      SOFFS 28
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E54A3642-3981-42DA-8BEE-2412582FEC81}
+      <SOURCE WAVE
+        FILE "samples\491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav"
+      >
+    >
+    <ITEM
+      POSITION 1.0625
+      SNAPOFFS 0
+      LENGTH 1.640625
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.963155 0.319945 1 1 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {46F914D5-12A2-4AC9-A9AC-65D875BAA259}
+      IID 358
+      NAME 491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav
+      VOLPAN 1.264516 0 2.508953 -1
+      SOFFS 12.85593179266883
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2FBDBEEE-9411-44EA-935E-24E0408133C8}
+      <SOURCE WAVE
+        FILE "samples\491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav"
+      >
+    >
+    <ITEM
+      POSITION 2.703125
+      SNAPOFFS 0
+      LENGTH 3.296875
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B4EBB674-19F5-446E-97DE-3DF3BC63E314}
+      IID 362
+      NAME 491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav
+      VOLPAN 0.741935 0 2.508953 -1
+      SOFFS 14.49655679266883
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {491F4F3C-0206-4FDB-855B-11C86A8FD185}
+      <SOURCE WAVE
+        FILE "samples\491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav"
+      >
+    >
+    <ITEM
+      POSITION 6
+      SNAPOFFS 0
+      LENGTH 2.453125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {88FEC53E-71F0-4DAD-8810-DAF3884D6D69}
+      IID 365
+      NAME 491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav
+      VOLPAN 1 0 2.508953 -1
+      SOFFS 17.79343179266883
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2FFA4E7B-4D47-44DE-8C0C-AABEE9C9036D}
+      <SOURCE WAVE
+        FILE "samples\491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav"
+      >
+    >
+    <ITEM
+      POSITION 8.453125
+      SNAPOFFS 0
+      LENGTH 1.53125
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B3F17FD7-414A-462A-BA06-4849E288C4EE}
+      IID 363
+      NAME 491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav
+      VOLPAN 1.264516 0 2.508953 -1
+      SOFFS 20.24655679266883
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {21F08BAF-347E-48F4-8871-CE4B87FF6D2F}
+      <SOURCE WAVE
+        FILE "samples\491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav"
+      >
+    >
+    <ITEM
+      POSITION 9.984375
+      SNAPOFFS 0
+      LENGTH 6.22219320733117
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1DEF41BC-7B1F-4D65-BC3F-830AE641CCF0}
+      IID 364
+      NAME 491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav
+      VOLPAN 1 0 2.508953 -1
+      SOFFS 21.77780679266883
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {300B90E4-A837-4D13-B64F-E233C92F1E74}
+      <SOURCE WAVE
+        FILE "samples\491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav"
       >
     >
   >

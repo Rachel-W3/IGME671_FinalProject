@@ -5,7 +5,7 @@
 			<value>4</value>
 		</property>
 		<property name="name">
-			<value>Button-Presses</value>
+			<value>Interface</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{199628fa-6fc0-4be9-9b72-16b7a556e2d4}</destination>

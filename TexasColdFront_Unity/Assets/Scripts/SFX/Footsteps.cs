@@ -43,7 +43,7 @@ namespace tcf.controller
         /// </summary>
         private void PlayFootsteps()
         {
-            if (isPlayerMoving)
+            if (isPlayerMoving && GameStateMachine.Instance.CurrentState == GameState.GAME)
             {
                 footstep.start();
             }

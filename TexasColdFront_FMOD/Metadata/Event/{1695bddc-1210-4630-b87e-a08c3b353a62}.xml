@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{fcaff346-b53b-4e1a-b352-f322399feddf}">
+		<property name="volume">
+			<value>-4</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{dfa9a1eb-e147-4c92-82b7-d3eb57f006e5}</destination>
 		</relationship>
@@ -115,6 +118,8 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{dfa9a1eb-e147-4c92-82b7-d3eb57f006e5}">
 		<relationship name="effects">
+			<destination>{ad1f7065-12cc-4426-99b9-a1658d72e21a}</destination>
+			<destination>{46001bee-caec-4ee3-b4f8-98471c205b32}</destination>
 			<destination>{cc782b0f-700f-4832-a256-3edccdb76e98}</destination>
 		</relationship>
 	</object>
@@ -126,6 +131,34 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5955a6c8-8fc7-46b0-a7c6-be073b4982e3}" />
+	<object class="CompressorEffect" id="{ad1f7065-12cc-4426-99b9-a1658d72e21a}">
+		<property name="threshold">
+			<value>-30.5</value>
+		</property>
+		<property name="ratio">
+			<value>1.95000005</value>
+		</property>
+		<property name="attackTime">
+			<value>7.4000001</value>
+		</property>
+		<property name="releaseTime">
+			<value>98</value>
+		</property>
+		<property name="linkChannels">
+			<value>false</value>
+		</property>
+	</object>
+	<object class="ThreeEQEffect" id="{46001bee-caec-4ee3-b4f8-98471c205b32}">
+		<property name="lowGain">
+			<value>-0.5</value>
+		</property>
+		<property name="midGain">
+			<value>0.5</value>
+		</property>
+		<property name="highGain">
+			<value>-1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{cc782b0f-700f-4832-a256-3edccdb76e98}" />
 	<object class="MixerBusFader" id="{e840726b-279c-4a2f-9c77-24a4f1a759b5}" />
 </objects>

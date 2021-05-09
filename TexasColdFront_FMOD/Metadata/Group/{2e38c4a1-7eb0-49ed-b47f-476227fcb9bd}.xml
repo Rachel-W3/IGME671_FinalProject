@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="MixerGroup" id="{2e38c4a1-7eb0-49ed-b47f-476227fcb9bd}">
+		<property name="volume">
+			<value>4</value>
+		</property>
 		<property name="name">
 			<value>SnowMelting-Minigame</value>
 		</property>
